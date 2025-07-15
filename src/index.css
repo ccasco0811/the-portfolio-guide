@@ -9,32 +9,57 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 0%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 0%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 0%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 0%;
+
+    /* Editorial design tokens */
+    --editorial-accent: 0 0% 20%;
+    --editorial-light: 0 0% 98%;
+    --editorial-border: 0 0% 85%;
+    
+    /* Typography scale */
+    --text-hero: 4rem;
+    --text-display: 3rem;
+    --text-heading: 2rem;
+    --text-subheading: 1.5rem;
+    --text-body: 1rem;
+    --text-small: 0.875rem;
+    
+    /* Spacing scale */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+    --space-2xl: 8rem;
+    
+    /* Shadows */
+    --shadow-editorial: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-strong: 0 4px 16px rgba(0, 0, 0, 0.15);
 
     --radius: 0.5rem;
 
@@ -101,5 +126,85 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-feature-settings: 'cv08', 'cv11';
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+}
+
+@layer components {
+  .editorial-hero {
+    @apply text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-none;
+  }
+  
+  .editorial-display {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight;
+  }
+  
+  .editorial-heading {
+    @apply text-2xl md:text-3xl font-semibold tracking-tight leading-tight;
+  }
+  
+  .editorial-subheading {
+    @apply text-xl md:text-2xl font-medium tracking-tight leading-relaxed;
+  }
+  
+  .editorial-body {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+  
+  .editorial-small {
+    @apply text-sm uppercase tracking-wider font-medium;
+  }
+  
+  .editorial-section {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+  
+  .editorial-container {
+    @apply max-w-6xl mx-auto px-4 md:px-6 lg:px-8;
+  }
+  
+  .editorial-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12;
+  }
+  
+  .editorial-card {
+    @apply bg-card border border-border p-6 md:p-8 transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .editorial-divider {
+    @apply w-full h-px bg-border my-8 md:my-12;
+  }
+  
+  .editorial-accent-line {
+    @apply w-12 h-0.5 bg-primary mb-4;
+  }
+  
+  .editorial-button {
+    @apply bg-primary text-primary-foreground px-6 py-3 font-medium tracking-wide uppercase text-sm transition-all duration-300 hover:bg-primary/90 border-2 border-primary hover:border-primary/90;
+  }
+  
+  .editorial-button-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 font-medium tracking-wide uppercase text-sm transition-all duration-300 hover:bg-primary hover:text-primary-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .editorial-shadow {
+    box-shadow: var(--shadow-editorial);
+  }
+  
+  .editorial-shadow-strong {
+    box-shadow: var(--shadow-strong);
   }
 }

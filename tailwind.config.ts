@@ -61,7 +61,40 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				editorial: {
+					accent: 'hsl(var(--editorial-accent))',
+					light: 'hsl(var(--editorial-light))',
+					border: 'hsl(var(--editorial-border))'
 				}
+			},
+			fontSize: {
+				'hero': 'var(--text-hero)',
+				'display': 'var(--text-display)',
+				'heading': 'var(--text-heading)',
+				'subheading': 'var(--text-subheading)',
+				'body': 'var(--text-body)',
+				'small': 'var(--text-small)'
+			},
+			spacing: {
+				'xs': 'var(--space-xs)',
+				'sm': 'var(--space-sm)',
+				'md': 'var(--space-md)',
+				'lg': 'var(--space-lg)',
+				'xl': 'var(--space-xl)',
+				'2xl': 'var(--space-2xl)'
+			},
+			boxShadow: {
+				'editorial': 'var(--shadow-editorial)',
+				'editorial-strong': 'var(--shadow-strong)'
+			},
+			letterSpacing: {
+				'tighter': '-0.05em',
+				'tight': '-0.025em',
+				'normal': '0',
+				'wide': '0.025em',
+				'wider': '0.05em',
+				'widest': '0.1em'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
