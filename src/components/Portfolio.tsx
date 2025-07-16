@@ -10,45 +10,44 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="editorial-section min-h-screen flex items-center relative overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
-        <div className="editorial-container relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="editorial-accent-line"></div>
-              <h1 className="editorial-hero text-balance mb-6">
-                GoatPath
-              </h1>
-              <p className="editorial-display text-balance mb-8">
-                Strategic Innovation Consulting
-              </p>
-              <div className="space-y-4 mb-8">
-                <p className="editorial-body text-balance">
-                  I help startups and innovation teams validate business ideas fast.
-                </p>
-                <p className="editorial-body text-balance">
-                  <strong>You bring the vision, we build the path to proof.</strong>
-                </p>
-                <p className="editorial-body text-balance">
-                  When you're ready to move from assumptions to evidence, 
-                  I guide you through rapid validation using Lean Startup, 
-                  Design Sprint, and proven testing methodologies.
-                </p>
-              </div>
-              <Button className="editorial-button group">
-                Start Your Validation Journey
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <div className="w-80 h-96 bg-muted border-2 border-primary editorial-shadow-strong">
-                <div className="w-full h-full bg-gradient-to-br from-muted to-accent opacity-60"></div>
+      <section className="min-h-screen flex items-center justify-center bg-black text-white relative overflow-hidden">
+        <div className="container mx-auto px-6 text-center">
+          <div className="flex justify-center mb-12">
+            <div className="w-24 h-24 border-4 border-white rounded-full flex items-center justify-center">
+              <div className="text-white text-2xl font-bold">
+                <svg viewBox="0 0 100 100" className="w-16 h-16 fill-current">
+                  <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="3"/>
+                  <path d="M30 40 Q50 20 70 40 Q50 60 30 40 Z" fill="currentColor"/>
+                  <circle cx="40" cy="35" r="3" fill="black"/>
+                  <circle cx="60" cy="35" r="3" fill="black"/>
+                  <path d="M35 50 Q50 35 65 50" stroke="black" strokeWidth="2" fill="none"/>
+                </svg>
               </div>
             </div>
           </div>
+          
+          <h1 className="text-5xl md:text-7xl font-light mb-8 leading-tight max-w-4xl mx-auto">
+            Shaping the future of<br />
+            products, one idea at<br />
+            a time.
+          </h1>
+          
+          <div className="max-w-2xl mx-auto space-y-6 mb-12">
+            <p className="text-lg leading-relaxed">
+              I help product and innovation teams validate business ideas through 
+              structured experiments and the support of artificial intelligence.
+            </p>
+            <p className="text-lg leading-relaxed">
+              My work reduces uncertainty, delivers evidence, and accelerates smarter 
+              decision-making.
+            </p>
+          </div>
+          
+          <Button 
+            className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg transition-all duration-300"
+          >
+            Let's Collaborate
+          </Button>
         </div>
       </section>
 
