@@ -18,7 +18,7 @@ one idea at a time.</h1>
               My work reduces uncertainty, delivers evidence, and accelerates smarter decision-making.
             </p>
             <div className="mt-10 flex items-center justify-start gap-x-6">
-              <a href="#" className="rounded-md border-2 border-white bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-white hover:text-black transition-colors duration-300">
+              <a href="#" className="rounded-full border-2 border-white bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-white hover:text-black transition-colors duration-300">
                 Let's collaborate together
               </a>
             </div>
