@@ -10,44 +10,19 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-black text-white relative overflow-hidden">
-        <div className="container mx-auto px-6 text-center">
-          <div className="flex justify-center mb-12">
-            <div className="w-24 h-24 border-4 border-white rounded-full flex items-center justify-center">
-              <div className="text-white text-2xl font-bold">
-                <svg viewBox="0 0 100 100" className="w-16 h-16 fill-current">
-                  <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="3"/>
-                  <path d="M30 40 Q50 20 70 40 Q50 60 30 40 Z" fill="currentColor"/>
-                  <circle cx="40" cy="35" r="3" fill="black"/>
-                  <circle cx="60" cy="35" r="3" fill="black"/>
-                  <path d="M35 50 Q50 35 65 50" stroke="black" strokeWidth="2" fill="none"/>
-                </svg>
-              </div>
+      <section className="min-h-screen flex items-center bg-background">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-24 sm:mt-32 md:mt-56">
+          <div className="mx-auto max-w-2xl lg:max-w-none">
+            <div className="max-w-3xl">
+              <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-foreground sm:text-7xl">
+                Award-winning development studio based in Denmark.
+              </h1>
+              <p className="mt-6 text-xl text-muted-foreground">
+                We are a development studio working at the intersection of design and technology. 
+                It's a really busy intersection though — a lot of our staff have been involved in hit and runs.
+              </p>
             </div>
           </div>
-          
-          <h1 className="text-5xl md:text-7xl font-light mb-8 leading-tight max-w-4xl mx-auto">
-            Shaping the future of<br />
-            products, one idea at<br />
-            a time.
-          </h1>
-          
-          <div className="max-w-2xl mx-auto space-y-6 mb-12">
-            <p className="text-lg leading-relaxed">
-              I help product and innovation teams validate business ideas through 
-              structured experiments and the support of artificial intelligence.
-            </p>
-            <p className="text-lg leading-relaxed">
-              My work reduces uncertainty, delivers evidence, and accelerates smarter 
-              decision-making.
-            </p>
-          </div>
-          
-          <Button 
-            className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg transition-all duration-300"
-          >
-            Let's Collaborate
-          </Button>
         </div>
       </section>
 
