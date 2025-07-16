@@ -27,9 +27,8 @@ const Portfolio = () => {
         </div>
         <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-40 text-center">
           <div className="mx-auto max-w-4xl">
-            <h1 className="mt-10 text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-8xl">
-              Shaping the future of products, one idea at a time.
-            </h1>
+            <h1 className="mt-10 text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl">Shaping the future of products, 
+one idea at a time.</h1>
             <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50">
               I help product and innovation teams validate business ideas through structured experiments and the support of artificial intelligence.
               My work reduces uncertainty, delivers evidence, and accelerates smarter decision-making.
