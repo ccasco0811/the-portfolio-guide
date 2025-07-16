@@ -47,8 +47,8 @@ const Portfolio = () => {
             className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
           />
         </div>
-        <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
-          <div className="mx-auto max-w-2xl shrink-0 lg:mx-0 lg:pt-8">
+        <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-40 text-center">
+          <div className="mx-auto max-w-4xl">
             <h1 className="mt-10 text-pretty text-5xl font-semibold tracking-tight text-white sm:text-7xl">
               Shaping the future of products, one idea at a time.
             </h1>
@@ -56,7 +56,7 @@ const Portfolio = () => {
               I help product and innovation teams validate business ideas through structured experiments and the support of artificial intelligence.
               My work reduces uncertainty, delivers evidence, and accelerates smarter decision-making.
             </p>
-            <div className="mt-10 flex items-center gap-x-6">
+            <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
                 className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
