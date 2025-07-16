@@ -68,6 +68,10 @@ export default {
 					border: 'hsl(var(--editorial-border))'
 				}
 			},
+			fontFamily: {
+				'moderustic': ['Moderustic', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
 			fontSize: {
 				'hero': 'var(--text-hero)',
 				'display': 'var(--text-display)',
