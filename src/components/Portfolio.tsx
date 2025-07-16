@@ -17,12 +17,9 @@ one idea at a time.</h1>
               I help product and innovation teams validate business ideas through structured experiments and the support of artificial intelligence.
               My work reduces uncertainty, delivers evidence, and accelerates smarter decision-making.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex items-center justify-start gap-x-6">
               <a href="#" className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">
                 Get started
-              </a>
-              <a href="#" className="text-sm/6 font-semibold text-white">
-                Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
