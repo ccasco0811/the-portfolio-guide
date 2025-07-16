@@ -15,11 +15,11 @@ const Portfolio = () => {
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="max-w-3xl">
               <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-foreground sm:text-7xl">
-                Award-winning development studio based in Denmark.
+                Shaping the future of products, one idea at a time.
               </h1>
               <p className="mt-6 text-xl text-muted-foreground">
-                We are a development studio working at the intersection of design and technology. 
-                It's a really busy intersection though — a lot of our staff have been involved in hit and runs.
+                I help product and innovation teams validate business ideas through structured experiments and the support of artificial intelligence.
+                My work reduces uncertainty, delivers evidence, and accelerates smarter decision-making.
               </p>
             </div>
           </div>
