@@ -30,8 +30,8 @@ const Portfolio = () => {
       <section className="relative overflow-hidden bg-black h-svh">
         <div className="mx-auto max-w-7xl px-6 h-full flex items-center lg:px-8">
           <div 
-            className={`max-w-4xl transition-all duration-1000 ${
-              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            className={`max-w-4xl transition-opacity duration-1000 ${
+              isLoaded ? 'opacity-100' : 'opacity-0'
             }`}
             style={{ opacity: heroOpacity }}
           >
