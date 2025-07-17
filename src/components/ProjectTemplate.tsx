@@ -123,24 +123,27 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       <section className="editorial-section">
         <div className="editorial-container">
           <div className="editorial-accent-line"></div>
-          <h2 className="editorial-display mb-8">Contexto & Reto</h2>
+          <h2 className="editorial-display mb-4">Contexto & Reto</h2>
+          <p className="editorial-body text-muted-foreground mb-12 max-w-3xl">
+            Entender el panorama completo, identificar los puntos de dolor más críticos y reconocer las oportunidades estratégicas que guiarán el desarrollo del proyecto.
+          </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <Card className="editorial-card">
-              <CardContent>
-                <h3 className="editorial-heading mb-4">Panorama</h3>
-                <p className="editorial-body text-muted-foreground">{panorama}</p>
+            <Card className="editorial-card h-80 flex flex-col">
+              <CardContent className="flex flex-col h-full justify-between">
+                <h3 className="editorial-heading mb-6">Panorama</h3>
+                <p className="editorial-body text-muted-foreground mt-auto">{panorama}</p>
               </CardContent>
             </Card>
-            <Card className="editorial-card">
-              <CardContent>
-                <h3 className="editorial-heading mb-4">Dolor Clave</h3>
-                <p className="editorial-body text-muted-foreground">{dolorClave}</p>
+            <Card className="editorial-card h-80 flex flex-col">
+              <CardContent className="flex flex-col h-full justify-between">
+                <h3 className="editorial-heading mb-6">Dolor Clave</h3>
+                <p className="editorial-body text-muted-foreground mt-auto">{dolorClave}</p>
               </CardContent>
             </Card>
-            <Card className="editorial-card">
-              <CardContent>
-                <h3 className="editorial-heading mb-4">Oportunidad</h3>
-                <p className="editorial-body text-muted-foreground">{oportunidad}</p>
+            <Card className="editorial-card h-80 flex flex-col">
+              <CardContent className="flex flex-col h-full justify-between">
+                <h3 className="editorial-heading mb-6">Oportunidad</h3>
+                <p className="editorial-body text-muted-foreground mt-auto">{oportunidad}</p>
               </CardContent>
             </Card>
           </div>
