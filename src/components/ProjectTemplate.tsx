@@ -98,7 +98,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
               {nombreProyecto}
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-16">
-              Factura CFDI en 30 s desde WhatsApp, sin contadores ni apps.
+              Create a legally valid invoice in 30 s on WhatsApp
             </p>
             
             {/* Role Cards */}
