@@ -94,6 +94,9 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             <div className="flex items-center gap-4 mb-8">
               <span className="text-pretty text-lg font-medium text-slate-50">FinTech · SaaS · TaxTech</span>
             </div>
+            <div className="mb-6">
+              <span className="text-pretty text-lg font-medium text-slate-50">{rol}</span>
+            </div>
             <h1 className="text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl mb-6">
               {nombreProyecto}
             </h1>
