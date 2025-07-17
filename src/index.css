@@ -195,7 +195,7 @@ All colors MUST be HSL.
   }
   
   .project-margins {
-    @apply ml-4 mr-16 md:ml-6 md:mr-24 lg:ml-8 lg:mr-32;
+    @apply ml-4 mr-16 md:ml-6 md:mr-24 lg:ml-8 lg:mr-40;
   }
 }
 
