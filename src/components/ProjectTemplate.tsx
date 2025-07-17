@@ -92,17 +92,34 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         <div className="editorial-container h-full flex items-center">
           <div className="max-w-4xl">
             <div className="flex items-center gap-4 mb-8">
-              <span className="text-pretty text-lg font-medium text-slate-50">FinTech · SaaS · TaxTech</span>
-            </div>
-            <div className="mb-6">
               <span className="text-pretty text-lg font-medium text-slate-50">{rol}</span>
             </div>
             <h1 className="text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl mb-6">
               {nombreProyecto}
             </h1>
-            <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-16">
-              Create a legally valid invoice in 30 s on WhatsApp
-            </p>
+            <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-16">Turning Complex Tax Rules into 30‑Second Wins</p>
+            
+            {/* Role Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <Card className="bg-black border border-white/20 p-4">
+                <CardContent className="p-0">
+                  <h3 className="text-lg font-semibold text-white mb-2">Estrategia</h3>
+                  <p className="text-sm text-white/70">{estrategia}</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-black border border-white/20 p-4">
+                <CardContent className="p-0">
+                  <h3 className="text-lg font-semibold text-white mb-2">UX/Service Design</h3>
+                  <p className="text-sm text-white/70">{uxDesign}</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-black border border-white/20 p-4">
+                <CardContent className="p-0">
+                  <h3 className="text-lg font-semibold text-white mb-2">Delivery</h3>
+                  <p className="text-sm text-white/70">{delivery}</p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
