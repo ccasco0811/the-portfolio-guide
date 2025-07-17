@@ -98,13 +98,10 @@ const Portfolio = () => {
             ].map((project) => (
               <article
                 key={project.id}
-                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-white border-2 border-white px-8 pb-8 pt-48"
+                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-white border-2 border-white px-8 pb-8 pt-48 cursor-pointer hover:scale-105 transition-transform duration-300"
               >
                 <h3 className="mt-3 text-lg/6 font-semibold text-black">
-                  <Link to={`/project/${project.slug}`}>
-                    <span className="absolute inset-0" />
-                    {project.title}
-                  </Link>
+                  {project.title}
                 </h3>
                 <p className="mt-2 text-sm text-gray-600">{project.description}</p>
               </article>
