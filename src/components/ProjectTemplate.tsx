@@ -97,6 +97,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             <h1 className="text-pretty text-5xl tracking-tight text-white text-left mb-6 sm:text-6xl font-light">
               {nombreProyecto}
             </h1>
+            <p className="text-pretty text-lg font-medium text-slate-50 mb-8">Product Strategy · UX Design · Service Design · AI Prototyping · Go‑to‑Market</p>
             
           </div>
         </div>
