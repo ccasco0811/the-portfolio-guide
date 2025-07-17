@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { ArrowRight, CheckCircle, Users, Zap, Target, MessageCircle, Mail, Linkedin, ExternalLink, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -6,12 +7,34 @@ import profileImage from '@/assets/profile-editorial.jpg';
 import heroImage from '@/assets/hero-editorial.jpg';
 import lexaImage from '@/assets/lexa-case.jpg';
 import numaImage from '@/assets/numa-case.jpg';
+
 const Portfolio = () => {
+  const [scrollY, setScrollY] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Trigger entrance animation
+    setIsLoaded(true);
+
+    // Handle scroll events
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Calculate opacity based on scroll position
+  const heroOpacity = Math.max(0, 1 - scrollY / 500);
+  const nextSectionOpacity = Math.min(1, scrollY / 300);
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-black h-svh">
         <div className="mx-auto max-w-7xl px-6 h-full flex items-center lg:px-8">
-          <div className="max-w-4xl">
+          <div 
+            className={`max-w-4xl transition-all duration-1000 ${
+              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+            style={{ opacity: heroOpacity }}
+          >
             {/* Logo */}
             <div className="flex justify-start mb-8">
               <img 
@@ -36,7 +59,10 @@ one idea at a time.</h1>
       </section>
 
       {/* Work Projects Section */}
-      <section className="bg-black py-24 sm:py-32">
+      <section 
+        className="bg-black py-24 sm:py-32 transition-opacity duration-500"
+        style={{ opacity: nextSectionOpacity }}
+      >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-left">
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
