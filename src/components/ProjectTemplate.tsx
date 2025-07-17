@@ -94,7 +94,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
     <div className="min-h-screen bg-background">
       {/* 0. Hero Section */}
       <section className="bg-black h-svh">
-        <div className="mx-auto max-w-7xl px-6 h-full flex items-center lg:px-8">
+        <div className="editorial-container h-full flex items-center">
           <div className="max-w-4xl">
             <div className="flex items-center gap-4 mb-8">
               <Badge variant="outline" className="bg-white/10 text-white border-white/20">
