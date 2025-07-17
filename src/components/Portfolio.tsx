@@ -1,41 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowRight, CheckCircle, Users, Zap, Target, MessageCircle, Mail, Linkedin, ExternalLink, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import profileImage from '@/assets/profile-editorial.jpg';
-import heroImage from '@/assets/hero-editorial.jpg';
-import lexaImage from '@/assets/lexa-case.jpg';
-import numaImage from '@/assets/numa-case.jpg';
+import React from 'react';
 
 const Portfolio = () => {
-  const [scrollY, setScrollY] = useState(0);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Fixed sections with fade transitions - ensuring smooth overlap
-  const heroOpacity = scrollY < 200 ? 1 : Math.max(0, 1 - ((scrollY - 200) / 200));
-  const workOpacity = scrollY > 100 ? Math.min(1, (scrollY - 100) / 200) : 0;
-
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section 
-        className="bg-black h-svh transition-opacity duration-700 ease-out"
-        style={{ opacity: heroOpacity }}
-      >
+      <section className="bg-black h-svh">
         <div className="mx-auto max-w-7xl px-6 h-full flex items-center lg:px-8">
-          <div 
-            className={`max-w-4xl transition-opacity duration-1000 ease-out ${
-              isLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
+          <div className="max-w-4xl">
             <div className="flex justify-start mb-8">
               <img 
                 src="/lovable-uploads/f6615c53-e1f9-45e6-928c-136887dfd867.png" 
@@ -60,10 +31,7 @@ const Portfolio = () => {
       </section>
 
       {/* Work Projects Section */}
-      <section 
-        className="bg-black h-svh transition-opacity duration-700 ease-out"
-        style={{ opacity: workOpacity }}
-      >
+      <section className="bg-black h-svh">
         <div className="mx-auto max-w-7xl px-6 h-full flex flex-col justify-center lg:px-8">
           <div className="text-left mb-16">
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
@@ -94,7 +62,7 @@ const Portfolio = () => {
             ].map((project) => (
               <article
                 key={project.id}
-                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-white border-2 border-white px-8 pb-8 pt-48 cursor-pointer hover:scale-105 transition-transform duration-300"
+                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-white border-2 border-white px-8 pb-8 pt-48"
               >
                 <h3 className="mt-3 text-lg/6 font-semibold text-black">
                   {project.title}
