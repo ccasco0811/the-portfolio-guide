@@ -163,11 +163,11 @@ All colors MUST be HSL.
   }
   
   .editorial-section {
-    @apply py-24 md:py-32 lg:py-40;
+    @apply py-16 md:py-24 lg:py-32;
   }
   
   .editorial-container {
-    @apply max-w-7xl mx-auto px-8 md:px-12 lg:px-16;
+    @apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
   }
   
   .editorial-grid {

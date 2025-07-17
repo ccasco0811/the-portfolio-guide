@@ -103,16 +103,6 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         </div>
       </section>
 
-      {/* Nueva sección en blanco */}
-      <section className="editorial-section">
-        <div className="editorial-container">
-          <p className="editorial-body text-muted-foreground">
-            NUMA is a new AI‑powered invoicing assistant designed for professionals who need to issue CFDI (Mexico's official digital tax invoices) quickly and without errors.
-            We defined NUMA's core proposition, designed its conversational flow, and built an MVP that lets users create a legally valid invoice directly on WhatsApp in under 30 seconds.
-          </p>
-        </div>
-      </section>
-
     </div>;
 };
 export default ProjectTemplate;
