@@ -193,10 +193,6 @@ All colors MUST be HSL.
   .editorial-button-outline {
     @apply border-2 border-primary text-primary px-6 py-3 font-medium tracking-wide uppercase text-sm transition-all duration-300 hover:bg-primary hover:text-primary-foreground;
   }
-  
-  .project-margins {
-    @apply ml-4 mr-16 md:ml-6 md:mr-24 lg:ml-8 lg:mr-40;
-  }
 }
 
 @layer utilities {
