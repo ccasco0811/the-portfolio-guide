@@ -92,7 +92,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         <div className="editorial-container h-full flex items-center">
           <div className="max-w-4xl">
             <div className="flex items-center gap-4 mb-8">
-              <span className="text-pretty text-lg font-medium text-slate-50">Product Strategy · UX Design · Service Design · AI Prototyping · Go‑to‑Market</span>
+              <span className="text-pretty text-lg font-medium text-slate-50">NUMA</span>
             </div>
             <h1 className="text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl mb-6">
               NUMA
