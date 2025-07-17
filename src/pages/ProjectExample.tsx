@@ -4,9 +4,9 @@ import ProjectTemplate from '@/components/ProjectTemplate';
 const ProjectExample = () => {
   const exampleData = {
     // Hero Section
-    nombreProyecto: "NUMA / Pivot to E‑Invoicing",
+    nombreProyecto: "A conversational invoicing assistant that helps professionals create compliant invoices in seconds.",
     tagline: "Factura CFDI en 30 s vía WhatsApp",
-    rol: "Founder & Product Lead — 2024‑2025",
+    rol: "Numa",
     industria: "Fintech / SaaS B2B",
     miniStats: ["⏱ 30 s", "🤖 95% auto", "💰 $500k MXN pre‑sales"],
     
