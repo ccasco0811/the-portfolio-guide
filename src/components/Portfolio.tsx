@@ -31,12 +31,12 @@ const Portfolio = () => {
   const nextSectionOpacity = Math.min(1, Math.max(0, (scrollY - 100) / 400));
   const nextSectionTransform = Math.max(0, 50 - (scrollY / 8));
   
-  // Calculate fade animations for other sections
-  const servicesOpacity = Math.min(1, Math.max(0, (scrollY - 800) / 400));
-  const methodologyOpacity = Math.min(1, Math.max(0, (scrollY - 1400) / 400));
-  const caseStudiesOpacity = Math.min(1, Math.max(0, (scrollY - 2000) / 400));
-  const aboutOpacity = Math.min(1, Math.max(0, (scrollY - 2600) / 400));
-  const contactOpacity = Math.min(1, Math.max(0, (scrollY - 3200) / 400));
+  // Calculate fade animations for other sections with earlier trigger points
+  const servicesOpacity = Math.min(1, Math.max(0, (scrollY - 400) / 300));
+  const methodologyOpacity = Math.min(1, Math.max(0, (scrollY - 800) / 300));
+  const caseStudiesOpacity = Math.min(1, Math.max(0, (scrollY - 1200) / 300));
+  const aboutOpacity = Math.min(1, Math.max(0, (scrollY - 1600) / 300));
+  const contactOpacity = Math.min(1, Math.max(0, (scrollY - 2000) / 300));
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-black h-svh sticky top-0 z-10">
