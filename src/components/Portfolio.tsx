@@ -24,10 +24,7 @@ const Portfolio = () => {
   const workOpacity = scrollY > 100 ? Math.min(1, (scrollY - 100) / 200) : 0;
 
   return (
-    <div className="relative">
-      {/* Scroll content for height - reduced since we only have 2 sections */}
-      <div className="h-[800px]"></div>
-
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section 
         className="bg-black h-svh transition-opacity duration-700 ease-out"
