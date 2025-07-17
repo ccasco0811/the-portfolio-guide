@@ -103,6 +103,15 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         </div>
       </section>
 
+      {/* 1. Nueva Sección */}
+      <section className="editorial-section project-margins">
+        <div className="editorial-container">
+          <p className="editorial-body text-muted-foreground">
+            Esta es una nueva sección con un párrafo de contenido. El margen derecho es mayor que el margen izquierdo para crear un diseño asimétrico interesante que mejora la composición visual del template.
+          </p>
+        </div>
+      </section>
+
     </div>;
 };
 export default ProjectTemplate;
