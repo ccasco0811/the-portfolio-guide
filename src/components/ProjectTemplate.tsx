@@ -89,8 +89,8 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
   return <div className="min-h-screen bg-background">
       {/* 0. Hero Section */}
       <section className="bg-black h-svh">
-        <div className="editorial-container h-full flex items-center">
-          <div className="max-w-4xl">
+        <div className="editorial-container h-full flex flex-col justify-between">
+          <div className="max-w-4xl pt-20">
             <div className="flex items-center gap-4 mb-8">
               <span className="text-pretty text-lg font-medium text-slate-50">{rol}</span>
             </div>
@@ -100,28 +100,28 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-8">
               {tagline}
             </p>
-            
-            {/* Role Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-              <Card className="bg-black border border-white/20 p-4">
-                <CardContent className="p-0">
-                  <h3 className="text-lg font-semibold text-white mb-2">Estrategia</h3>
-                  <p className="text-sm text-white/70">{estrategia}</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-black border border-white/20 p-4">
-                <CardContent className="p-0">
-                  <h3 className="text-lg font-semibold text-white mb-2">UX/Service Design</h3>
-                  <p className="text-sm text-white/70">{uxDesign}</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-black border border-white/20 p-4">
-                <CardContent className="p-0">
-                  <h3 className="text-lg font-semibold text-white mb-2">Delivery</h3>
-                  <p className="text-sm text-white/70">{delivery}</p>
-                </CardContent>
-              </Card>
-            </div>
+          </div>
+          
+          {/* Role Cards - moved to bottom */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
+            <Card className="bg-black border border-white/20 p-4">
+              <CardContent className="p-0">
+                <h3 className="text-lg font-semibold text-white mb-2">Estrategia</h3>
+                <p className="text-sm text-white/70">{estrategia}</p>
+              </CardContent>
+            </Card>
+            <Card className="bg-black border border-white/20 p-4">
+              <CardContent className="p-0">
+                <h3 className="text-lg font-semibold text-white mb-2">UX/Service Design</h3>
+                <p className="text-sm text-white/70">{uxDesign}</p>
+              </CardContent>
+            </Card>
+            <Card className="bg-black border border-white/20 p-4">
+              <CardContent className="p-0">
+                <h3 className="text-lg font-semibold text-white mb-2">Delivery</h3>
+                <p className="text-sm text-white/70">{delivery}</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
