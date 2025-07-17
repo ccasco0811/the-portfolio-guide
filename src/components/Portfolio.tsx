@@ -19,10 +19,9 @@ const Portfolio = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Fixed sections with fade transitions only - no movement
-  // Only Hero and Work Projects sections
-  const heroOpacity = scrollY < 300 ? 1 : Math.max(0, 1 - ((scrollY - 300) / 200));
-  const workOpacity = scrollY >= 300 ? Math.min(1, (scrollY - 300) / 200) : 0;
+  // Fixed sections with fade transitions - ensuring smooth overlap
+  const heroOpacity = scrollY < 200 ? 1 : Math.max(0, 1 - ((scrollY - 200) / 200));
+  const workOpacity = scrollY > 100 ? Math.min(1, (scrollY - 100) / 200) : 0;
 
   return (
     <div className="relative">
