@@ -13,45 +13,11 @@ const Portfolio = () => {
           <div className="mx-auto max-w-4xl">
             {/* Logo */}
             <div className="flex justify-start mb-8">
-              <svg 
-                width="120" 
-                height="120" 
-                viewBox="0 0 2372 2372" 
-                className="text-white"
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <style>
-                    {`.cls-1 { fill: none; stroke: currentColor; stroke-miterlimit: 10; stroke-width: 45px; }`}
-                  </style>
-                </defs>
-                <g id="Layer_2-2" data-name="Layer 2">
-                  <g id="Layer_8" data-name="Layer 8">
-                    <g>
-                      <path className="cls-1" d="M1186.31,785.3c129.82-211.56,363.28-352.67,629.69-352.67,94.43,0,184.72,17.73,267.72,50.04"/>
-                      <path className="cls-1" d="M1186.31,398.31c148.56-121.23,332.74-200.46,534.43-219.58"/>
-                      <path className="cls-1" d="M1186.31,785.3c-129.82-211.56-363.28-352.67-629.69-352.67-94.43,0-184.72,17.73-267.72,50.04"/>
-                      <path className="cls-1" d="M1186.31,398.31c-148.56-121.23-332.74-200.46-534.43-219.58"/>
-                      <path className="cls-1" d="M1473.56,1290.2c-59.84,59.83-156.85,59.83-216.68,0h0c28.94-172.28,178.79-303.55,359.3-303.55,196.1,0,356.01,154.92,364.03,349.04h-258.75"/>
-                      <path className="cls-1" d="M1756.61,1014.69c-.03,424.07-205.11,994.41-570.3,994.41"/>
-                      <path className="cls-1" d="M1256.89,1290.21c0-342.39,277.56-619.95,619.95-619.95,144.14,0,278.88,51.42,384.19,133.95"/>
-                      <path className="cls-1" d="M899.07,1290.2c59.84,59.83,156.85,59.83,216.68,0h0c-28.94-172.28-178.79-303.55-359.3-303.55-196.1,0-356.01,154.92-364.03,349.04h258.75"/>
-                      <path className="cls-1" d="M616.02,1014.69c.03,424.07,205.11,994.41,570.3,994.41"/>
-                      <path className="cls-1" d="M1115.74,1290.21c0-342.39-277.56-619.95-619.95-619.95-144.97,0-280.44,52.02-386.02,135.39"/>
-                      <path className="cls-1" d="M616.02,1014.69c-74.69-137.71-219.66-228.9-386.39-227.3-40.89.39-80.47,6.23-118.03,16.82"/>
-                      <path className="cls-1" d="M899.07,1290.2c0,216.44,133,510.94,287.25,510.94s287.25-294.51,287.25-510.94"/>
-                      <path className="cls-1" d="M1404.48,1933.28c11.61,149.01-49.22,295.61-151.89,391.46"/>
-                      <path className="cls-1" d="M1120.05,2324.73c-102.66-95.83-163.51-242.47-151.89-391.46"/>
-                      <path className="cls-1" d="M1756.98,1014.84c128.35-130.21,306.77-210.93,504.05-210.93"/>
-                      <path className="cls-1" d="M1868.18,2100.39c-134.43-89.88-236.36-224.57-284.41-382.71"/>
-                      <path className="cls-1" d="M504.45,2100.39c134.43-89.88,236.36-224.57,284.41-382.71"/>
-                      <circle className="cls-1" cx="1186.32" cy="1186.32" r="1140.32"/>
-                      <path className="cls-1" d="M956.42,875.29c75.4-8.85,152.12-13.41,229.9-13.41s154.5,4.55,229.9,13.41"/>
-                    </g>
-                  </g>
-                </g>
-              </svg>
+              <img 
+                src="/lovable-uploads/f6615c53-e1f9-45e6-928c-136887dfd867.png" 
+                alt="GoatPath Logo" 
+                className="w-[120px] h-[120px]"
+              />
             </div>
             <h1 className="text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl">Shaping the future of products, 
 one idea at a time.</h1>
