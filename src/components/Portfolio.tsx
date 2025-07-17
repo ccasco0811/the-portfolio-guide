@@ -38,7 +38,7 @@ one idea at a time.</h1>
       {/* Work Projects Section */}
       <section className="bg-black py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-left">
+          <div className="text-left">
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               What We made Happen
             </h2>
@@ -83,11 +83,11 @@ one idea at a time.</h1>
       </section>
 
       {/* Services Section */}
-      <section className="editorial-section bg-muted">
-        <div className="editorial-container">
-          <div className="text-center mb-16">
-            <div className="editorial-accent-line mx-auto"></div>
-            <h2 className="editorial-display mb-4">How We Work Together</h2>
+      <section className="py-24 sm:py-32 bg-muted">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-left mb-16">
+            <div className="w-12 h-0.5 bg-primary mb-8"></div>
+            <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl mb-4">How We Work Together</h2>
           </div>
           
           <div className="editorial-grid">
@@ -164,11 +164,11 @@ one idea at a time.</h1>
       </section>
 
       {/* Methodology Section */}
-      <section className="editorial-section">
-        <div className="editorial-container">
-          <div className="text-center mb-16">
-            <div className="editorial-accent-line mx-auto"></div>
-            <h2 className="editorial-display mb-4">The GoatPath Method</h2>
+      <section className="py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-left mb-16">
+            <div className="w-12 h-0.5 bg-primary mb-8"></div>
+            <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl mb-4">The GoatPath Method</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -207,11 +207,11 @@ one idea at a time.</h1>
       </section>
 
       {/* Case Studies Section */}
-      <section className="editorial-section bg-muted">
-        <div className="editorial-container">
-          <div className="text-center mb-16">
-            <div className="editorial-accent-line mx-auto"></div>
-            <h2 className="editorial-display mb-4">Proven Results</h2>
+      <section className="py-24 sm:py-32 bg-muted">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-left mb-16">
+            <div className="w-12 h-0.5 bg-primary mb-8"></div>
+            <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl mb-4">Proven Results</h2>
           </div>
           
           <div className="space-y-16">
@@ -297,12 +297,12 @@ one idea at a time.</h1>
       </section>
 
       {/* About Section */}
-      <section className="editorial-section">
-        <div className="editorial-container">
+      <section className="py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="editorial-accent-line"></div>
-              <h2 className="editorial-display mb-6">Behind GoatPath</h2>
+              <div className="w-12 h-0.5 bg-primary mb-8"></div>
+              <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl mb-6">Behind GoatPath</h2>
               <div className="space-y-4">
                 <p className="editorial-body">
                   I'm a strategic innovation consultant who believes in validating fast and failing cheap.
@@ -332,11 +332,11 @@ one idea at a time.</h1>
       </section>
 
       {/* Contact Section */}
-      <section className="editorial-section bg-primary text-primary-foreground">
-        <div className="editorial-container">
+      <section className="py-24 sm:py-32 bg-primary text-primary-foreground">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
             <div className="w-12 h-0.5 bg-primary-foreground mx-auto mb-8"></div>
-            <h2 className="editorial-display mb-6">Ready to Validate Your Idea?</h2>
+            <h2 className="text-4xl font-semibold tracking-tight mb-6">Ready to Validate Your Idea?</h2>
             <p className="editorial-body mb-8 max-w-2xl mx-auto">
               Whether you need rapid market validation, user research, or strategic pivoting guidance, 
               I'm here to help you move from uncertainty to clarity.
