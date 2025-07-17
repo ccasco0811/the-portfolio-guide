@@ -14,8 +14,8 @@ const Portfolio = () => {
             {/* Logo */}
             <div className="flex justify-start mb-8">
               <svg 
-                width="60" 
-                height="60" 
+                width="120" 
+                height="120" 
                 viewBox="0 0 2372 2372" 
                 className="text-white"
                 fill="none" 
