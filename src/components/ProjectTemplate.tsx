@@ -128,19 +128,19 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             Entender el panorama completo, identificar los puntos de dolor más críticos y reconocer las oportunidades estratégicas que guiarán el desarrollo del proyecto.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <Card className="editorial-card h-80 flex flex-col">
+            <Card className="editorial-card h-96 flex flex-col">
               <CardContent className="flex flex-col h-full justify-between">
                 <h3 className="editorial-heading mb-6">Panorama</h3>
                 <p className="editorial-body text-muted-foreground mt-auto">{panorama}</p>
               </CardContent>
             </Card>
-            <Card className="editorial-card h-80 flex flex-col">
+            <Card className="editorial-card h-96 flex flex-col">
               <CardContent className="flex flex-col h-full justify-between">
                 <h3 className="editorial-heading mb-6">Dolor Clave</h3>
                 <p className="editorial-body text-muted-foreground mt-auto">{dolorClave}</p>
               </CardContent>
             </Card>
-            <Card className="editorial-card h-80 flex flex-col">
+            <Card className="editorial-card h-96 flex flex-col">
               <CardContent className="flex flex-col h-full justify-between">
                 <h3 className="editorial-heading mb-6">Oportunidad</h3>
                 <p className="editorial-body text-muted-foreground mt-auto">{oportunidad}</p>
