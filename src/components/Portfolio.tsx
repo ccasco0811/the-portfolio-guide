@@ -97,9 +97,6 @@ one idea at a time.</h1>
                 key={post.id}
                 className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-black px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
               >
-                <img alt="" src={post.imageUrl} className="absolute inset-0 -z-10 size-full object-cover" />
-                <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/40" />
-                <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
                 <h3 className="mt-3 text-lg/6 font-semibold text-white">
                   <a href={post.href}>
