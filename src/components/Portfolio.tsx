@@ -11,7 +11,7 @@ const Portfolio = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-black">
         <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-40">
-          <div className="mx-auto max-w-4xl">
+          <div className="max-w-4xl">
             {/* Logo */}
             <div className="flex justify-start mb-8">
               <img 
