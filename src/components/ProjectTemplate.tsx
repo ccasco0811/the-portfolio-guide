@@ -127,11 +127,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             </div>
             
             <div className="flex flex-wrap gap-2">
-              {miniStats.map((stat, index) => (
-                <Badge key={index} variant="outline" className="bg-white/10 text-white border-white/20">
-                  {stat}
-                </Badge>
-              ))}
+              {miniStats.map((stat, index) => {})}
             </div>
           </div>
         </div>
