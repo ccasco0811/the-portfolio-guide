@@ -100,7 +100,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             <h1 className="text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl mb-6">
               {nombreProyecto}
             </h1>
-            <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-16">
+            <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-8">
               {tagline}
             </p>
             
@@ -127,9 +127,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             </div>
             
             <div className="flex flex-wrap gap-2">
-              {miniStats.map((stat, index) => (
-                <Badge key={index} variant="secondary">{stat}</Badge>
-              ))}
+              {miniStats.map((stat, index) => {})}
             </div>
           </div>
         </div>
