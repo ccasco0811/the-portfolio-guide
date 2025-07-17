@@ -124,7 +124,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         <div className="editorial-container">
           <div className="editorial-accent-line"></div>
           <h2 className="editorial-display mb-8">Contexto & Reto</h2>
-          <p className="editorial-body text-muted-foreground mb-12 max-w-3xl">
+          <p className="editorial-body text-muted-foreground mb-16 max-w-3xl">
             Entender el panorama completo, identificar los puntos de dolor más críticos y reconocer las oportunidades estratégicas que guiarán el desarrollo del proyecto.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
