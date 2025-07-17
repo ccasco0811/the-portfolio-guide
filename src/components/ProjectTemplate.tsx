@@ -92,10 +92,10 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         <div className="editorial-container h-full flex items-center">
           <div className="max-w-4xl">
             <div className="flex items-center gap-4 mb-8">
-              <span className="text-pretty text-lg font-medium text-slate-50">{rol}</span>
+              <span className="text-pretty text-lg font-medium text-slate-50">Product Strategy · UX Design · Service Design · AI Prototyping · Go‑to‑Market</span>
             </div>
             <h1 className="text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl mb-6">
-              {nombreProyecto}
+              NUMA
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-16">A conversational invoicing assistant that helps professionals create compliant invoices in seconds.</p>
             
