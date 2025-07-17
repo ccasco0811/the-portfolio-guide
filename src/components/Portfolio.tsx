@@ -30,6 +30,13 @@ const Portfolio = () => {
   
   const nextSectionOpacity = Math.min(1, Math.max(0, (scrollY - 100) / 400));
   const nextSectionTransform = Math.max(0, 50 - (scrollY / 8));
+  
+  // Calculate fade animations for other sections
+  const servicesOpacity = Math.min(1, Math.max(0, (scrollY - 800) / 400));
+  const methodologyOpacity = Math.min(1, Math.max(0, (scrollY - 1400) / 400));
+  const caseStudiesOpacity = Math.min(1, Math.max(0, (scrollY - 2000) / 400));
+  const aboutOpacity = Math.min(1, Math.max(0, (scrollY - 2600) / 400));
+  const contactOpacity = Math.min(1, Math.max(0, (scrollY - 3200) / 400));
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-black h-svh sticky top-0 z-10">
@@ -137,7 +144,13 @@ one idea at a time.</h1>
       </section>
 
       {/* Services Section */}
-      <section className="py-24 sm:py-32 bg-muted">
+      <section 
+        className="py-24 sm:py-32 bg-muted transition-all duration-700 ease-out"
+        style={{ 
+          opacity: servicesOpacity,
+          transform: `translateY(${Math.max(0, 30 - (scrollY / 20))}px)`,
+        }}
+      >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-left mb-16">
             <div className="w-12 h-0.5 bg-primary mb-8"></div>
@@ -218,7 +231,13 @@ one idea at a time.</h1>
       </section>
 
       {/* Methodology Section */}
-      <section className="py-24 sm:py-32">
+      <section 
+        className="py-24 sm:py-32 transition-all duration-700 ease-out"
+        style={{ 
+          opacity: methodologyOpacity,
+          transform: `translateY(${Math.max(0, 30 - (scrollY / 25))}px)`,
+        }}
+      >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-left mb-16">
             <div className="w-12 h-0.5 bg-primary mb-8"></div>
@@ -261,7 +280,13 @@ one idea at a time.</h1>
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-24 sm:py-32 bg-muted">
+      <section 
+        className="py-24 sm:py-32 bg-muted transition-all duration-700 ease-out"
+        style={{ 
+          opacity: caseStudiesOpacity,
+          transform: `translateY(${Math.max(0, 30 - (scrollY / 30))}px)`,
+        }}
+      >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-left mb-16">
             <div className="w-12 h-0.5 bg-primary mb-8"></div>
@@ -351,7 +376,13 @@ one idea at a time.</h1>
       </section>
 
       {/* About Section */}
-      <section className="py-24 sm:py-32">
+      <section 
+        className="py-24 sm:py-32 transition-all duration-700 ease-out"
+        style={{ 
+          opacity: aboutOpacity,
+          transform: `translateY(${Math.max(0, 30 - (scrollY / 35))}px)`,
+        }}
+      >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -386,7 +417,13 @@ one idea at a time.</h1>
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 sm:py-32 bg-primary text-primary-foreground">
+      <section 
+        className="py-24 sm:py-32 bg-primary text-primary-foreground transition-all duration-700 ease-out"
+        style={{ 
+          opacity: contactOpacity,
+          transform: `translateY(${Math.max(0, 30 - (scrollY / 40))}px)`,
+        }}
+      >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
             <div className="w-12 h-0.5 bg-primary-foreground mx-auto mb-8"></div>
