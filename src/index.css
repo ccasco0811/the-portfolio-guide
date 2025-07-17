@@ -133,13 +133,13 @@ All colors MUST be HSL.
   
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.01em;
   }
 }
 
 @layer components {
   .editorial-hero {
-    @apply text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-none;
+    @apply text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none;
   }
   
   .editorial-display {
