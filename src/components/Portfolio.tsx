@@ -30,7 +30,7 @@ const Portfolio = () => {
 
       {/* Hero Section */}
       <section 
-        className="fixed inset-0 bg-black h-svh z-10 transition-opacity duration-700 ease-out"
+        className="bg-black h-svh transition-opacity duration-700 ease-out"
         style={{ opacity: heroOpacity }}
       >
         <div className="mx-auto max-w-7xl px-6 h-full flex items-center lg:px-8">
@@ -64,7 +64,7 @@ const Portfolio = () => {
 
       {/* Work Projects Section */}
       <section 
-        className="fixed inset-0 bg-black h-svh z-20 transition-opacity duration-700 ease-out"
+        className="bg-black h-svh transition-opacity duration-700 ease-out"
         style={{ opacity: workOpacity }}
       >
         <div className="mx-auto max-w-7xl px-6 h-full flex flex-col justify-center lg:px-8">
