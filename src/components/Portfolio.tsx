@@ -27,7 +27,7 @@ const Portfolio = () => {
   const nextSectionOpacity = Math.min(1, scrollY / 300);
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black h-svh">
+      <section className="relative overflow-hidden bg-black h-svh sticky top-0 z-10">
         <div className="mx-auto max-w-7xl px-6 h-full flex items-center lg:px-8">
           <div 
             className={`max-w-4xl transition-opacity duration-1000 ${
@@ -60,7 +60,7 @@ one idea at a time.</h1>
 
       {/* Work Projects Section */}
       <section 
-        className="bg-black py-24 sm:py-32 transition-opacity duration-500"
+        className="bg-black py-24 sm:py-32 transition-opacity duration-500 relative z-20"
         style={{ opacity: nextSectionOpacity }}
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
