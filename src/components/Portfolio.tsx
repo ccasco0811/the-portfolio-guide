@@ -16,24 +16,38 @@ const Portfolio = () => {
     // Trigger entrance animation
     setIsLoaded(true);
 
-    // Handle scroll events
+    // Enhanced scroll handler with passive listener for performance
     const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Calculate opacity based on scroll position
-  const heroOpacity = Math.max(0, 1 - scrollY / 500);
-  const nextSectionOpacity = Math.min(1, scrollY / 300);
+  // Enhanced scroll calculations for seamless illusion
+  const scrollProgress = Math.min(1, scrollY / 600);
+  const heroOpacity = Math.max(0, 1 - (scrollY / 300));
+  const heroScale = Math.max(0.95, 1 - (scrollY / 1200));
+  const heroBlur = Math.min(4, scrollY / 150);
+  
+  const nextSectionOpacity = Math.min(1, Math.max(0, (scrollY - 100) / 400));
+  const nextSectionTransform = Math.max(0, 50 - (scrollY / 8));
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-black h-svh sticky top-0 z-10">
-        <div className="mx-auto max-w-7xl px-6 h-full flex items-center lg:px-8">
+        <div 
+          className="mx-auto max-w-7xl px-6 h-full flex items-center lg:px-8 transition-all duration-700 ease-out"
+          style={{ 
+            transform: `scale(${heroScale})`,
+            filter: `blur(${heroBlur}px)`,
+          }}
+        >
           <div 
-            className={`max-w-4xl transition-opacity duration-1000 ${
+            className={`max-w-4xl transition-all duration-1000 ease-out ${
               isLoaded ? 'opacity-100' : 'opacity-0'
             }`}
-            style={{ opacity: heroOpacity }}
+            style={{ 
+              opacity: heroOpacity,
+              transform: `translateY(${scrollY * 0.3}px)`,
+            }}
           >
             {/* Logo */}
             <div className="flex justify-start mb-8">
@@ -60,11 +74,25 @@ one idea at a time.</h1>
 
       {/* Work Projects Section */}
       <section 
-        className="bg-black py-24 sm:py-32 transition-opacity duration-500 relative z-20"
-        style={{ opacity: nextSectionOpacity }}
+        className="bg-black py-24 sm:py-32 transition-all duration-700 ease-out relative z-20"
+        style={{ 
+          opacity: nextSectionOpacity,
+          transform: `translateY(${nextSectionTransform}px)`,
+        }}
       >
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-left">
+        <div 
+          className="mx-auto max-w-7xl px-6 lg:px-8 transition-all duration-1000 ease-out"
+          style={{ 
+            transform: `translateY(${Math.max(0, 30 - (scrollY / 10))}px)`,
+          }}
+        >
+          <div 
+            className="text-left transition-all duration-500 ease-out"
+            style={{ 
+              opacity: Math.min(1, Math.max(0, (scrollY - 150) / 300)),
+              transform: `translateY(${Math.max(0, 20 - (scrollY / 15))}px)`,
+            }}
+          >
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               What We made Happen
             </h2>
