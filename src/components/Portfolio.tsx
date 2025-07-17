@@ -20,7 +20,7 @@ const Portfolio = () => {
             <h1 className="editorial-hero-title text-white mb-6 sm:mb-8 lg:mb-12">
               Shaping the future of products, one idea at a time.
             </h1>
-            <p className="editorial-body text-slate-50 mb-6 sm:mb-8 lg:mb-12 max-w-prose break-words whitespace-normal">
+            <p className="editorial-body text-slate-50 mb-6 sm:mb-8 lg:mb-12 max-w-prose break-words whitespace-normal" style={{ whiteSpace: 'normal', wordSpacing: 'normal', letterSpacing: 'normal' }}>
               I help product and innovation teams validate business ideas through structured experiments and the support of artificial intelligence. My work reduces uncertainty, delivers evidence, and accelerates smarter decision-making.
             </p>
             <div className="flex items-center justify-start">
