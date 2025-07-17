@@ -93,27 +93,27 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
   return (
     <div className="min-h-screen bg-background">
       {/* 0. Hero Section */}
-      <section className="editorial-section bg-primary text-primary-foreground">
-        <div className="editorial-container">
+      <section className="bg-black h-svh">
+        <div className="mx-auto max-w-7xl px-6 h-full flex items-center lg:px-8">
           <div className="max-w-4xl">
-            <Badge variant="secondary" className="mb-4">
-              {industria}
-            </Badge>
-            <h1 className="editorial-hero mb-6">
+            <div className="flex items-center gap-4 mb-8">
+              <Badge variant="outline" className="bg-white/10 text-white border-white/20">
+                {industria}
+              </Badge>
+              <span className="text-pretty text-lg font-medium text-slate-50">{rol}</span>
+            </div>
+            <h1 className="text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl mb-6">
               {nombreProyecto}
             </h1>
-            <p className="editorial-subheading mb-8 text-primary-foreground/90">
-              "{tagline}"
+            <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-8">
+              {tagline}
             </p>
-            <div className="flex flex-wrap items-center gap-4 mb-8">
-              <span className="editorial-body font-medium">{rol}</span>
-              <div className="flex flex-wrap gap-2">
-                {miniStats.map((stat, index) => (
-                  <Badge key={index} variant="outline" className="bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20">
-                    {stat}
-                  </Badge>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2">
+              {miniStats.map((stat, index) => (
+                <Badge key={index} variant="outline" className="bg-white/10 text-white border-white/20">
+                  {stat}
+                </Badge>
+              ))}
             </div>
           </div>
         </div>
