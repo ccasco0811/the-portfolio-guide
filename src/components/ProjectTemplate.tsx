@@ -97,7 +97,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             <h1 className="text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl mb-6">
               {nombreProyecto}
             </h1>
-            <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-16">Turning Complex Tax Rules into 30‑Second Wins</p>
+            <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-16">A conversational invoicing assistant that helps professionals create compliant invoices in seconds.</p>
             
             {/* Role Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
