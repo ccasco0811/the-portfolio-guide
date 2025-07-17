@@ -130,20 +130,20 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <Card className="editorial-card h-96 flex flex-col">
               <CardContent className="flex flex-col h-full justify-between">
-                <h3 className="editorial-heading mb-6">Panorama</h3>
-                <p className="editorial-body text-muted-foreground mt-auto">{panorama}</p>
+                <h3 className="editorial-heading mb-6 text-white">Panorama</h3>
+                <p className="editorial-body text-white/70 mt-auto">{panorama}</p>
               </CardContent>
             </Card>
             <Card className="editorial-card h-96 flex flex-col">
               <CardContent className="flex flex-col h-full justify-between">
-                <h3 className="editorial-heading mb-6">Dolor Clave</h3>
-                <p className="editorial-body text-muted-foreground mt-auto">{dolorClave}</p>
+                <h3 className="editorial-heading mb-6 text-white">Dolor Clave</h3>
+                <p className="editorial-body text-white/70 mt-auto">{dolorClave}</p>
               </CardContent>
             </Card>
             <Card className="editorial-card h-96 flex flex-col">
               <CardContent className="flex flex-col h-full justify-between">
-                <h3 className="editorial-heading mb-6">Oportunidad</h3>
-                <p className="editorial-body text-muted-foreground mt-auto">{oportunidad}</p>
+                <h3 className="editorial-heading mb-6 text-white">Oportunidad</h3>
+                <p className="editorial-body text-white/70 mt-auto">{oportunidad}</p>
               </CardContent>
             </Card>
           </div>
@@ -208,26 +208,26 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="editorial-card">
               <CardContent>
-                <h3 className="editorial-heading mb-4">Descubrimiento</h3>
-                <p className="editorial-body text-muted-foreground">{descubrimiento}</p>
+                <h3 className="editorial-heading mb-4 text-white">Descubrimiento</h3>
+                <p className="editorial-body text-white/70">{descubrimiento}</p>
               </CardContent>
             </Card>
             <Card className="editorial-card">
               <CardContent>
-                <h3 className="editorial-heading mb-4">Diseño</h3>
-                <p className="editorial-body text-muted-foreground">{diseno}</p>
+                <h3 className="editorial-heading mb-4 text-white">Diseño</h3>
+                <p className="editorial-body text-white/70">{diseno}</p>
               </CardContent>
             </Card>
             <Card className="editorial-card">
               <CardContent>
-                <h3 className="editorial-heading mb-4">Iteración</h3>
-                <p className="editorial-body text-muted-foreground">{iteracion}</p>
+                <h3 className="editorial-heading mb-4 text-white">Iteración</h3>
+                <p className="editorial-body text-white/70">{iteracion}</p>
               </CardContent>
             </Card>
             <Card className="editorial-card">
               <CardContent>
-                <h3 className="editorial-heading mb-4">Lanzamiento</h3>
-                <p className="editorial-body text-muted-foreground">{lanzamiento}</p>
+                <h3 className="editorial-heading mb-4 text-white">Lanzamiento</h3>
+                <p className="editorial-body text-white/70">{lanzamiento}</p>
               </CardContent>
             </Card>
           </div>
@@ -320,20 +320,20 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <Card className="editorial-card">
               <CardContent>
-                <h3 className="editorial-heading mb-4 text-green-600">Qué funcionó ✅</h3>
-                <p className="editorial-body text-muted-foreground">{queFunciono}</p>
+                <h3 className="editorial-heading mb-4 text-green-400">Qué funcionó ✅</h3>
+                <p className="editorial-body text-white/70">{queFunciono}</p>
               </CardContent>
             </Card>
             <Card className="editorial-card">
               <CardContent>
-                <h3 className="editorial-heading mb-4 text-red-600">Qué no funcionó ❌</h3>
-                <p className="editorial-body text-muted-foreground">{queNo}</p>
+                <h3 className="editorial-heading mb-4 text-red-400">Qué no funcionó ❌</h3>
+                <p className="editorial-body text-white/70">{queNo}</p>
               </CardContent>
             </Card>
             <Card className="editorial-card">
               <CardContent>
-                <h3 className="editorial-heading mb-4 text-blue-600">Próximo paso 🚀</h3>
-                <p className="editorial-body text-muted-foreground">{proximoPaso}</p>
+                <h3 className="editorial-heading mb-4 text-blue-400">Próximo paso 🚀</h3>
+                <p className="editorial-body text-white/70">{proximoPaso}</p>
               </CardContent>
             </Card>
           </div>

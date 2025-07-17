@@ -175,7 +175,7 @@ All colors MUST be HSL.
   }
   
   .editorial-card {
-    @apply bg-card border border-border p-6 md:p-8 transition-all duration-300 hover:shadow-lg;
+    @apply bg-black border border-white/20 p-6 md:p-8 transition-all duration-300;
   }
   
   .editorial-divider {
