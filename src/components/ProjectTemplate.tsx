@@ -95,7 +95,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
               <span className="text-pretty text-lg font-medium text-slate-50">NUMA</span>
             </div>
             <h1 className="text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl mb-6">
-              NUMA
+              A conversational invoicing assistant that helps professionals create compliant invoices in seconds.
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-16">A conversational invoicing assistant that helps professionals create compliant invoices in seconds.</p>
             
