@@ -4,7 +4,7 @@ import ProjectTemplate from '@/components/ProjectTemplate';
 const ProjectExample = () => {
   const exampleData = {
     // Hero Section
-    nombreProyecto: "NUMA – Pivot de REPSE a Facturación",
+    nombreProyecto: "NUMA / Pivot to E‑Invoicing",
     tagline: "Factura CFDI en 30 s vía WhatsApp",
     rol: "Founder & Product Lead — 2024‑2025",
     industria: "Fintech / SaaS B2B",
