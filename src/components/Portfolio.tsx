@@ -39,9 +39,9 @@ one idea at a time.</h1>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-              Work Projects
+              What We made Happen
             </h2>
-            <p className="mt-2 text-lg/8 text-gray-600">Explore our latest validation projects and success stories.</p>
+            <p className="mt-2 text-lg/8 text-gray-600">Projects I've co-designed with teams and founders to turn ideas into meaningful, testable solutions.</p>
           </div>
           <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {[
