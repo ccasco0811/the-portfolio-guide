@@ -108,6 +108,29 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50 mb-8">
               {tagline}
             </p>
+            
+            {/* Role Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              <Card className="bg-black border border-white/20 p-4">
+                <CardContent className="p-0">
+                  <h3 className="text-lg font-semibold text-white mb-2">Estrategia</h3>
+                  <p className="text-sm text-white/70">{estrategia}</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-black border border-white/20 p-4">
+                <CardContent className="p-0">
+                  <h3 className="text-lg font-semibold text-white mb-2">UX/Service Design</h3>
+                  <p className="text-sm text-white/70">{uxDesign}</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-black border border-white/20 p-4">
+                <CardContent className="p-0">
+                  <h3 className="text-lg font-semibold text-white mb-2">Delivery</h3>
+                  <p className="text-sm text-white/70">{delivery}</p>
+                </CardContent>
+              </Card>
+            </div>
+            
             <div className="flex flex-wrap gap-2">
               {miniStats.map((stat, index) => (
                 <Badge key={index} variant="outline" className="bg-white/10 text-white border-white/20">
@@ -150,29 +173,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         </div>
       </section>
 
-      {/* 2. My Role */}
-      <section className="editorial-section bg-muted/30">
-        <div className="editorial-container">
-          <div className="editorial-accent-line"></div>
-          <h2 className="editorial-display mb-8">Mi Rol</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div>
-              <h3 className="editorial-heading mb-3">Estrategia</h3>
-              <p className="editorial-body text-muted-foreground">{estrategia}</p>
-            </div>
-            <div>
-              <h3 className="editorial-heading mb-3">UX/Service Design</h3>
-              <p className="editorial-body text-muted-foreground">{uxDesign}</p>
-            </div>
-            <div>
-              <h3 className="editorial-heading mb-3">Delivery</h3>
-              <p className="editorial-body text-muted-foreground">{delivery}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. Objectives & Metrics */}
+      {/* 2. Objectives & Metrics */}
       <section className="editorial-section">
         <div className="editorial-container">
           <div className="editorial-accent-line"></div>
@@ -200,7 +201,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         </div>
       </section>
 
-      {/* 4. Process */}
+      {/* 3. Process */}
       <section className="editorial-section bg-muted/30">
         <div className="editorial-container">
           <div className="editorial-accent-line"></div>
@@ -246,7 +247,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         </div>
       </section>
 
-      {/* 5. Final Solution */}
+      {/* 4. Final Solution */}
       <section className="editorial-section">
         <div className="editorial-container">
           <div className="editorial-accent-line"></div>
@@ -284,7 +285,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         </div>
       </section>
 
-      {/* 6. Results */}
+      {/* 5. Results */}
       <section className="editorial-section bg-muted/30">
         <div className="editorial-container">
           <div className="editorial-accent-line"></div>
@@ -312,7 +313,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         </div>
       </section>
 
-      {/* 7. Learnings & Next Steps */}
+      {/* 6. Learnings & Next Steps */}
       <section className="editorial-section">
         <div className="editorial-container">
           <div className="editorial-accent-line"></div>
@@ -340,7 +341,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         </div>
       </section>
 
-      {/* 8. Credits & Tools */}
+      {/* 7. Credits & Tools */}
       <section className="editorial-section bg-muted/30">
         <div className="editorial-container">
           <div className="editorial-accent-line"></div>
