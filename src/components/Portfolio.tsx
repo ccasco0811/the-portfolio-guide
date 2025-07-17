@@ -13,50 +13,43 @@ const Portfolio = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // Trigger entrance animation
     setIsLoaded(true);
-
-    // Enhanced scroll handler with passive listener for performance
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Enhanced scroll calculations for seamless illusion
-  const scrollProgress = Math.min(1, scrollY / 600);
-  const heroOpacity = Math.max(0, 1 - (scrollY / 300));
-  const heroScale = Math.max(0.95, 1 - (scrollY / 1200));
-  const heroBlur = Math.min(4, scrollY / 150);
-  
-  const nextSectionOpacity = Math.min(1, Math.max(0, (scrollY - 100) / 400));
-  const nextSectionTransform = Math.max(0, 50 - (scrollY / 8));
-  
-  // Calculate fade animations for other sections with earlier trigger points
-  const servicesOpacity = Math.min(1, Math.max(0, (scrollY - 400) / 300));
-  const methodologyOpacity = Math.min(1, Math.max(0, (scrollY - 800) / 300));
-  const caseStudiesOpacity = Math.min(1, Math.max(0, (scrollY - 1200) / 300));
-  const aboutOpacity = Math.min(1, Math.max(0, (scrollY - 1600) / 300));
-  const contactOpacity = Math.min(1, Math.max(0, (scrollY - 2000) / 300));
-  return <div className="min-h-screen bg-background">
+  // Fixed sections with fade transitions only - no movement
+  // Each section fades in/out based on scroll position
+  const heroOpacity = scrollY < 300 ? 1 : Math.max(0, 1 - ((scrollY - 300) / 200));
+  const workOpacity = scrollY >= 300 && scrollY < 800 ? Math.min(1, (scrollY - 300) / 200) : 
+                     scrollY >= 800 ? Math.max(0, 1 - ((scrollY - 800) / 200)) : 0;
+  const servicesOpacity = scrollY >= 800 && scrollY < 1300 ? Math.min(1, (scrollY - 800) / 200) : 
+                         scrollY >= 1300 ? Math.max(0, 1 - ((scrollY - 1300) / 200)) : 0;
+  const methodologyOpacity = scrollY >= 1300 && scrollY < 1800 ? Math.min(1, (scrollY - 1300) / 200) : 
+                            scrollY >= 1800 ? Math.max(0, 1 - ((scrollY - 1800) / 200)) : 0;
+  const caseStudiesOpacity = scrollY >= 1800 && scrollY < 2300 ? Math.min(1, (scrollY - 1800) / 200) : 
+                            scrollY >= 2300 ? Math.max(0, 1 - ((scrollY - 2300) / 200)) : 0;
+  const aboutOpacity = scrollY >= 2300 && scrollY < 2800 ? Math.min(1, (scrollY - 2300) / 200) : 
+                      scrollY >= 2800 ? Math.max(0, 1 - ((scrollY - 2800) / 200)) : 0;
+  const contactOpacity = scrollY >= 2800 ? Math.min(1, (scrollY - 2800) / 200) : 0;
+
+  return (
+    <div className="relative">
+      {/* Scroll content for height */}
+      <div className="h-[3500px]"></div>
+
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-black h-svh sticky top-0 z-10">
-        <div 
-          className="mx-auto max-w-7xl px-6 h-full flex items-center lg:px-8 transition-all duration-700 ease-out"
-          style={{ 
-            transform: `scale(${heroScale})`,
-            filter: `blur(${heroBlur}px)`,
-          }}
-        >
+      <section 
+        className="fixed inset-0 bg-black h-svh z-10 transition-opacity duration-700 ease-out"
+        style={{ opacity: heroOpacity }}
+      >
+        <div className="mx-auto max-w-7xl px-6 h-full flex items-center lg:px-8">
           <div 
-            className={`max-w-4xl transition-all duration-1000 ease-out ${
+            className={`max-w-4xl transition-opacity duration-1000 ease-out ${
               isLoaded ? 'opacity-100' : 'opacity-0'
             }`}
-            style={{ 
-              opacity: heroOpacity,
-              transform: `translateY(${scrollY * 0.3}px)`,
-            }}
           >
-            {/* Logo */}
             <div className="flex justify-start mb-8">
               <img 
                 src="/lovable-uploads/f6615c53-e1f9-45e6-928c-136887dfd867.png" 
@@ -64,8 +57,9 @@ const Portfolio = () => {
                 className="w-[120px] h-[120px]"
               />
             </div>
-            <h1 className="text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl">Shaping the future of products, 
-one idea at a time.</h1>
+            <h1 className="text-pretty text-5xl font-semibold tracking-tight text-white text-left sm:text-6xl">
+              Shaping the future of products, one idea at a time.
+            </h1>
             <p className="mt-8 text-pretty text-lg font-medium sm:text-xl/8 text-left text-slate-50">
               I help product and innovation teams validate business ideas through structured experiments and the support of artificial intelligence.
               My work reduces uncertainty, delivers evidence, and accelerates smarter decision-making.
@@ -81,54 +75,40 @@ one idea at a time.</h1>
 
       {/* Work Projects Section */}
       <section 
-        className="bg-black py-24 sm:py-32 transition-all duration-700 ease-out relative z-20"
-        style={{ 
-          opacity: nextSectionOpacity,
-          transform: `translateY(${nextSectionTransform}px)`,
-        }}
+        className="fixed inset-0 bg-black h-svh z-20 transition-opacity duration-700 ease-out"
+        style={{ opacity: workOpacity }}
       >
-        <div 
-          className="mx-auto max-w-7xl px-6 lg:px-8 transition-all duration-1000 ease-out"
-          style={{ 
-            transform: `translateY(${Math.max(0, 30 - (scrollY / 10))}px)`,
-          }}
-        >
-          <div 
-            className="text-left transition-all duration-500 ease-out"
-            style={{ 
-              opacity: Math.min(1, Math.max(0, (scrollY - 150) / 300)),
-              transform: `translateY(${Math.max(0, 20 - (scrollY / 15))}px)`,
-            }}
-          >
+        <div className="mx-auto max-w-7xl px-6 h-full flex flex-col justify-center lg:px-8">
+          <div className="text-left mb-16">
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               What We made Happen
             </h2>
             <p className="mt-2 text-lg/8 text-white">Projects I've co-designed with teams and founders to turn ideas into meaningful, testable solutions.</p>
           </div>
-          <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div className="mx-auto grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {[
               {
                 id: 1,
                 title: 'Title proyect',
                 slug: 'project-1',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
               },
               {
                 id: 2,
                 title: 'Title proyect',
                 slug: 'project-2',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
               },
               {
                 id: 3,
                 title: 'Title proyect',
                 slug: 'project-3',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
               },
             ].map((project) => (
               <article
                 key={project.id}
-                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-white border-2 border-white px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-white border-2 border-white px-8 pb-8 pt-48"
               >
                 <h3 className="mt-3 text-lg/6 font-semibold text-black">
                   <Link to={`/project/${project.slug}`}>
@@ -145,13 +125,10 @@ one idea at a time.</h1>
 
       {/* Services Section */}
       <section 
-        className="py-24 sm:py-32 bg-muted transition-all duration-700 ease-out"
-        style={{ 
-          opacity: servicesOpacity,
-          transform: `translateY(${Math.max(0, 30 - (scrollY / 20))}px)`,
-        }}
+        className="fixed inset-0 bg-muted h-svh z-30 transition-opacity duration-700 ease-out overflow-y-auto"
+        style={{ opacity: servicesOpacity }}
       >
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="text-left mb-16">
             <div className="w-12 h-0.5 bg-primary mb-8"></div>
             <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl mb-4">How We Work Together</h2>
@@ -232,13 +209,10 @@ one idea at a time.</h1>
 
       {/* Methodology Section */}
       <section 
-        className="py-24 sm:py-32 transition-all duration-700 ease-out"
-        style={{ 
-          opacity: methodologyOpacity,
-          transform: `translateY(${Math.max(0, 30 - (scrollY / 25))}px)`,
-        }}
+        className="fixed inset-0 bg-background h-svh z-40 transition-opacity duration-700 ease-out overflow-y-auto"
+        style={{ opacity: methodologyOpacity }}
       >
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="text-left mb-16">
             <div className="w-12 h-0.5 bg-primary mb-8"></div>
             <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl mb-4">The GoatPath Method</h2>
@@ -246,26 +220,27 @@ one idea at a time.</h1>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[{
-            number: "1",
-            title: "DISCOVER",
-            description: "I audit your assumptions and identify critical risks.",
-            result: "You gain clarity on what needs validation first."
-          }, {
-            number: "2",
-            title: "DESIGN",
-            description: "We craft targeted experiments and testing strategies.",
-            result: "You get a clear roadmap for gathering evidence."
-          }, {
-            number: "3",
-            title: "VALIDATE",
-            description: "I guide you through rapid testing cycles.",
-            result: "You collect real market feedback in days, not months."
-          }, {
-            number: "4",
-            title: "DECIDE",
-            description: "We analyze results and define next steps together.",
-            result: "You move forward with confidence, backed by data."
-          }].map((step, index) => <div key={index} className="text-center">
+              number: "1",
+              title: "DISCOVER",
+              description: "I audit your assumptions and identify critical risks.",
+              result: "You gain clarity on what needs validation first."
+            }, {
+              number: "2",
+              title: "DESIGN",
+              description: "We craft targeted experiments and testing strategies.",
+              result: "You get a clear roadmap for gathering evidence."
+            }, {
+              number: "3",
+              title: "VALIDATE",
+              description: "I guide you through rapid testing cycles.",
+              result: "You collect real market feedback in days, not months."
+            }, {
+              number: "4",
+              title: "DECIDE",
+              description: "We analyze results and define next steps together.",
+              result: "You move forward with confidence, backed by data."
+            }].map((step, index) => (
+              <div key={index} className="text-center">
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold">{step.number}</span>
@@ -274,27 +249,24 @@ one idea at a time.</h1>
                 </div>
                 <p className="editorial-body mb-4">{step.description}</p>
                 <p className="editorial-body font-medium text-primary">{step.result}</p>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Case Studies Section */}
       <section 
-        className="py-24 sm:py-32 bg-muted transition-all duration-700 ease-out"
-        style={{ 
-          opacity: caseStudiesOpacity,
-          transform: `translateY(${Math.max(0, 30 - (scrollY / 30))}px)`,
-        }}
+        className="fixed inset-0 bg-muted h-svh z-50 transition-opacity duration-700 ease-out overflow-y-auto"
+        style={{ opacity: caseStudiesOpacity }}
       >
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="text-left mb-16">
             <div className="w-12 h-0.5 bg-primary mb-8"></div>
             <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl mb-4">Proven Results</h2>
           </div>
           
           <div className="space-y-16">
-            {/* LEXA Case */}
             <Card className="editorial-card">
               <CardContent className="p-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -333,7 +305,6 @@ one idea at a time.</h1>
               </CardContent>
             </Card>
 
-            {/* NUMA Case */}
             <Card className="editorial-card">
               <CardContent className="p-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -377,13 +348,10 @@ one idea at a time.</h1>
 
       {/* About Section */}
       <section 
-        className="py-24 sm:py-32 transition-all duration-700 ease-out"
-        style={{ 
-          opacity: aboutOpacity,
-          transform: `translateY(${Math.max(0, 30 - (scrollY / 35))}px)`,
-        }}
+        className="fixed inset-0 bg-background h-svh z-60 transition-opacity duration-700 ease-out overflow-y-auto"
+        style={{ opacity: aboutOpacity }}
       >
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="w-12 h-0.5 bg-primary mb-8"></div>
@@ -418,13 +386,10 @@ one idea at a time.</h1>
 
       {/* Contact Section */}
       <section 
-        className="py-24 sm:py-32 bg-primary text-primary-foreground transition-all duration-700 ease-out"
-        style={{ 
-          opacity: contactOpacity,
-          transform: `translateY(${Math.max(0, 30 - (scrollY / 40))}px)`,
-        }}
+        className="fixed inset-0 bg-primary text-primary-foreground h-svh z-70 transition-opacity duration-700 ease-out overflow-y-auto"
+        style={{ opacity: contactOpacity }}
       >
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="text-center">
             <div className="w-12 h-0.5 bg-primary-foreground mx-auto mb-8"></div>
             <h2 className="text-4xl font-semibold tracking-tight mb-6">Ready to Validate Your Idea?</h2>
@@ -460,6 +425,8 @@ one idea at a time.</h1>
           </div>
         </div>
       </section>
-    </div>;
+    </div>
+  );
 };
+
 export default Portfolio;
