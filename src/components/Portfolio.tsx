@@ -20,7 +20,7 @@ const Portfolio = () => {
             <h1 className="editorial-hero-title text-white mb-6 sm:mb-8 lg:mb-12">
               Shaping the future of products, one idea at a time.
             </h1>
-            <p className="editorial-body text-slate-50 mb-6 sm:mb-8 lg:mb-12 max-w-prose">
+            <p className="editorial-body text-slate-50 mb-6 sm:mb-8 lg:mb-12 max-w-prose break-words whitespace-normal">
               I help product and innovation teams validate business ideas through structured experiments and the support of artificial intelligence.
               My work reduces uncertainty, delivers evidence, and accelerates smarter decision-making.
             </p>
@@ -43,7 +43,7 @@ const Portfolio = () => {
             <h2 className="editorial-heading text-white mb-6 sm:mb-8 lg:mb-12">
               What We Made Happen
             </h2>
-            <p className="editorial-body text-white/80 max-w-prose">
+            <p className="editorial-body text-white/80 max-w-prose break-words whitespace-normal">
               Projects I've co-designed with teams and founders to turn ideas into meaningful, testable solutions.
             </p>
           </div>
@@ -95,7 +95,7 @@ const Portfolio = () => {
                   <h3 className="editorial-subheading text-foreground mb-3">
                     {project.title}
                   </h3>
-                  <p className="editorial-small text-muted-foreground mb-6 max-w-prose">
+                  <p className="editorial-small text-muted-foreground mb-6 max-w-prose break-words whitespace-normal">
                     {project.description}
                   </p>
                   <a 
@@ -122,10 +122,10 @@ const Portfolio = () => {
               <h2 className="editorial-heading text-foreground mb-6 sm:mb-8 lg:mb-12">
                 Turning Ideas Into Reality
               </h2>
-              <p className="editorial-body text-muted-foreground mb-6 sm:mb-8 lg:mb-12 max-w-prose">
+              <p className="editorial-body text-muted-foreground mb-6 sm:mb-8 lg:mb-12 max-w-prose break-words whitespace-normal">
                 With over a decade of experience in product design and innovation consulting, I specialize in bridging the gap between ambitious ideas and market-ready solutions.
               </p>
-              <p className="editorial-body text-muted-foreground mb-6 sm:mb-8 lg:mb-12 max-w-prose">
+              <p className="editorial-body text-muted-foreground mb-6 sm:mb-8 lg:mb-12 max-w-prose break-words whitespace-normal">
                 My approach combines structured experimentation, AI-powered insights, and human-centered design to help teams make smarter decisions faster.
               </p>
               <div className="space-y-4">
@@ -162,7 +162,7 @@ const Portfolio = () => {
             <h2 className="editorial-heading text-foreground mb-6 sm:mb-8 lg:mb-12">
               Ready to Start Your Project?
             </h2>
-            <p className="editorial-body text-muted-foreground mb-6 sm:mb-8 lg:mb-12 max-w-prose mx-auto">
+            <p className="editorial-body text-muted-foreground mb-6 sm:mb-8 lg:mb-12 max-w-prose mx-auto break-words whitespace-normal">
               Let's discuss how we can turn your ideas into market-ready solutions through structured experimentation and AI-powered insights.
             </p>
             <a 
