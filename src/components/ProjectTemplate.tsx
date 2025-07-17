@@ -103,6 +103,15 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         </div>
       </section>
 
+      {/* Nueva sección en blanco */}
+      <section className="editorial-section">
+        <div className="editorial-container">
+          <p className="editorial-body text-muted-foreground">
+            Este es un párrafo de contenido para la nueva sección.
+          </p>
+        </div>
+      </section>
+
     </div>;
 };
 export default ProjectTemplate;
