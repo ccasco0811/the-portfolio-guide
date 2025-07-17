@@ -2,19 +2,16 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-
 interface Metric {
   objetivo: string;
   kpi: string;
   meta: string;
 }
-
 interface Resultado {
   metrica: string;
   antes: string;
   despues: string;
 }
-
 interface ProjectTemplateProps {
   // Hero Section
   nombreProyecto: string;
@@ -22,47 +19,46 @@ interface ProjectTemplateProps {
   rol: string;
   industria: string;
   miniStats: string[];
-  
+
   // Context & Challenge
   panorama: string;
   dolorClave: string;
   oportunidad: string;
-  
+
   // Role
   estrategia: string;
   uxDesign: string;
   delivery: string;
-  
+
   // Objectives & Metrics
   objetivos: Metric[];
-  
+
   // Process
   descubrimiento: string;
   diseno: string;
   iteracion: string;
   lanzamiento: string;
   artefactosVisuales?: string[];
-  
+
   // Final Solution
   imagenSolucion: string;
   funcionamiento: string[];
   techStack: string[];
-  
+
   // Results
   resultados: Resultado[];
-  
+
   // Learnings & Next Steps
   queFunciono: string;
   queNo: string;
   proximoPaso: string;
-  
+
   // Credits & Tools
   creditos: {
     area: string;
     colaboradores: string;
   }[];
 }
-
 const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
   nombreProyecto,
   tagline,
@@ -90,8 +86,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
   proximoPaso,
   creditos
 }) => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* 0. Hero Section */}
       <section className="bg-black h-svh">
         <div className="editorial-container h-full flex items-center">
@@ -132,11 +127,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             </div>
             
             <div className="flex flex-wrap gap-2">
-              {miniStats.map((stat, index) => (
-                <Badge key={index} variant="outline" className="bg-white/10 text-white border-white/20">
-                  {stat}
-                </Badge>
-              ))}
+              {miniStats.map((stat, index) => {})}
             </div>
           </div>
         </div>
@@ -188,13 +179,11 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
                 </tr>
               </thead>
               <tbody>
-                {objetivos.map((objetivo, index) => (
-                  <tr key={index} className="border-b border-border/50">
+                {objetivos.map((objetivo, index) => <tr key={index} className="border-b border-border/50">
                     <td className="py-4 px-2 editorial-body">{objetivo.objetivo}</td>
                     <td className="py-4 px-2 editorial-body text-muted-foreground">{objetivo.kpi}</td>
                     <td className="py-4 px-2 editorial-body font-medium">{objetivo.meta}</td>
-                  </tr>
-                ))}
+                  </tr>)}
               </tbody>
             </table>
           </div>
@@ -232,18 +221,14 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
               </CardContent>
             </Card>
           </div>
-          {artefactosVisuales.length > 0 && (
-            <div className="mt-8">
+          {artefactosVisuales.length > 0 && <div className="mt-8">
               <h3 className="editorial-heading mb-4">Artefactos Visuales</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {artefactosVisuales.map((artefacto, index) => (
-                  <div key={index} className="bg-muted/50 h-32 flex items-center justify-center border border-border">
+                {artefactosVisuales.map((artefacto, index) => <div key={index} className="bg-muted/50 h-32 flex items-center justify-center border border-border">
                     <span className="editorial-small text-muted-foreground">{artefacto}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
-            </div>
-          )}
+            </div>}
         </div>
       </section>
 
@@ -261,23 +246,19 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             <div>
               <h3 className="editorial-heading mb-4">Cómo funciona</h3>
               <ul className="space-y-3 mb-6">
-                {funcionamiento.map((paso, index) => (
-                  <li key={index} className="editorial-body flex items-start gap-3">
+                {funcionamiento.map((paso, index) => <li key={index} className="editorial-body flex items-start gap-3">
                     <span className="bg-primary text-primary-foreground w-6 h-6 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0">
                       {index + 1}
                     </span>
                     {paso}
-                  </li>
-                ))}
+                  </li>)}
               </ul>
               <div>
                 <h4 className="editorial-subheading mb-3">Tech Stack</h4>
                 <div className="flex flex-wrap gap-2">
-                  {techStack.map((tech, index) => (
-                    <Badge key={index} variant="secondary">
+                  {techStack.map((tech, index) => <Badge key={index} variant="secondary">
                       {tech}
-                    </Badge>
-                  ))}
+                    </Badge>)}
                 </div>
               </div>
             </div>
@@ -300,13 +281,11 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
                 </tr>
               </thead>
               <tbody>
-                {resultados.map((resultado, index) => (
-                  <tr key={index} className="border-b border-border/50">
+                {resultados.map((resultado, index) => <tr key={index} className="border-b border-border/50">
                     <td className="py-4 px-2 editorial-body">{resultado.metrica}</td>
                     <td className="py-4 px-2 editorial-body text-muted-foreground">{resultado.antes}</td>
                     <td className="py-4 px-2 editorial-body font-medium text-green-600">{resultado.despues}</td>
-                  </tr>
-                ))}
+                  </tr>)}
               </tbody>
             </table>
           </div>
@@ -355,12 +334,10 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
                 </tr>
               </thead>
               <tbody>
-                {creditos.map((credito, index) => (
-                  <tr key={index} className="border-b border-border/50">
+                {creditos.map((credito, index) => <tr key={index} className="border-b border-border/50">
                     <td className="py-4 px-2 editorial-body font-medium">{credito.area}</td>
                     <td className="py-4 px-2 editorial-body text-muted-foreground">{credito.colaboradores}</td>
-                  </tr>
-                ))}
+                  </tr>)}
               </tbody>
             </table>
           </div>
@@ -371,17 +348,11 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       <section className="editorial-section bg-primary text-primary-foreground">
         <div className="editorial-container text-center">
           <h2 className="editorial-display mb-6">¿Quieres resultados así?</h2>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="editorial-button-outline border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-          >
+          <Button variant="outline" size="lg" className="editorial-button-outline border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
             Escríbeme 👉 cabras.co
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default ProjectTemplate;
