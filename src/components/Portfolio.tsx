@@ -7,28 +7,35 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="editorial-hero bg-black">
-        <div className="editorial-container min-h-[600px] lg:min-h-[800px] flex items-center">
-          <div className="editorial-content-width">
-            <div className="flex justify-start mb-6 sm:mb-8 lg:mb-12">
+      <section className="bg-black min-h-screen flex items-center">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-20">
+          <div className="max-w-4xl">
+            {/* Logo */}
+            <div className="mb-12">
               <img 
                 src="/lovable-uploads/f6615c53-e1f9-45e6-928c-136887dfd867.png" 
                 alt="GoatPath Logo" 
-                className="w-20 h-20 sm:w-24 sm:h-24 lg:w-[120px] lg:h-[120px] object-contain"
+                className="w-24 h-24 lg:w-32 lg:h-32 object-contain"
               />
             </div>
-            <h1 className="editorial-hero-title text-white mb-6 sm:mb-8 lg:mb-12">
+            
+            {/* Hero Title */}
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8">
               Shaping the future of products, one idea at a time.
             </h1>
-            <p className="editorial-body text-slate-50 mb-6 sm:mb-8 lg:mb-12 max-w-prose break-words whitespace-normal">
+            
+            {/* Hero Description */}
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-12 max-w-3xl">
               I help product and innovation teams validate business ideas through structured experiments and the support of artificial intelligence. My work reduces uncertainty, delivers evidence, and accelerates smarter decision-making.
             </p>
-            <div className="flex items-center justify-start">
+            
+            {/* CTA Button */}
+            <div className="flex items-center">
               <a 
                 href="#projects" 
-                className="inline-flex items-center justify-center rounded-full border-2 border-white bg-transparent px-6 py-3 sm:px-8 sm:py-4 text-sm font-semibold text-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105"
               >
-                Let's collaborate together
+                Let&apos;s collaborate together
               </a>
             </div>
           </div>
