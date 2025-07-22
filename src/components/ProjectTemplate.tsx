@@ -117,8 +117,8 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             {/* Metadata grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
               <div>
-                <p className="text-gray-500 uppercase tracking-wide font-medium mb-2">TIMELINE</p>
-                <p className="text-gray-900">2024—Present</p>
+                <p className="text-white/70 uppercase tracking-wide font-medium mb-2">TIMELINE</p>
+                <p className="text-white">2024—Present</p>
               </div>
               {/* etc... */}
             </div>
