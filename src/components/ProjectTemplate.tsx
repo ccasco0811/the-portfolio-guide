@@ -107,10 +107,10 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
                 {role}
               </Badge>
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-white leading-tight mb-6">
               {projectName}
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-12">
+            <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 leading-relaxed mb-12">
               {tagline}
             </p>
           </div>
@@ -132,17 +132,17 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <span className="text-2xl">✨</span>
-              <h2 className="editorial-heading text-foreground">Context</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground">Context</h2>
             </div>
             
             <div className="space-y-6 mb-8">
-              <p className="editorial-body text-foreground leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-foreground leading-relaxed">
                 {contextDescription}
               </p>
-              <p className="editorial-body text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
                 <strong>The Problem:</strong> {problemStatement}
               </p>
-              <p className="editorial-body text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
                 <strong>Why it mattered:</strong> {whyImportant}
               </p>
             </div>
@@ -160,27 +160,27 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <span className="text-2xl">🧭</span>
-              <h2 className="editorial-heading text-foreground">Approach</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground">Approach</h2>
             </div>
             
             <div className="space-y-6 mb-8">
-              <p className="editorial-body text-foreground leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-foreground leading-relaxed">
                 {approachDescription}
               </p>
-              <p className="editorial-body text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
                 {methodology}
               </p>
             </div>
 
             <div className="mb-8">
-              <h3 className="editorial-subheading text-foreground mb-6">My Focus Areas</h3>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-light text-foreground mb-6">My Focus Areas</h3>
               <div className="grid gap-4">
                 {focusAreas.map((area, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">{area.title}</h4>
-                      <p className="text-muted-foreground text-sm">{area.description}</p>
+                      <h4 className="text-base md:text-lg font-semibold text-foreground mb-1">{area.title}</h4>
+                      <p className="text-muted-foreground text-base md:text-lg">{area.description}</p>
                     </div>
                   </div>
                 ))}
@@ -200,30 +200,30 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <span className="text-2xl">🚀</span>
-              <h2 className="editorial-heading text-foreground">Solution</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground">Solution</h2>
             </div>
             
             <div className="space-y-6 mb-8">
-              <p className="editorial-body text-foreground leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-foreground leading-relaxed">
                 {solutionDescription}
               </p>
-              <p className="editorial-body text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
                 {keyCharacteristics}
               </p>
-              <p className="editorial-body text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
                 {interfaceTone}
               </p>
             </div>
 
             <div className="mb-8">
-              <h3 className="editorial-subheading text-foreground mb-6">Key Features</h3>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-light text-foreground mb-6">Key Features</h3>
               <div className="grid gap-4">
                 {keyFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">{feature.title}</h4>
-                      <p className="text-muted-foreground text-sm">{feature.description}</p>
+                      <h4 className="text-base md:text-lg font-semibold text-foreground mb-1">{feature.title}</h4>
+                      <p className="text-muted-foreground text-base md:text-lg">{feature.description}</p>
                     </div>
                   </div>
                 ))}
@@ -243,11 +243,11 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <span className="text-2xl">📊</span>
-              <h2 className="editorial-heading text-foreground">Impact</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground">Impact</h2>
             </div>
             
             {impactDescription && (
-              <p className="editorial-body text-foreground leading-relaxed mb-8">
+              <p className="text-lg md:text-xl lg:text-2xl text-foreground leading-relaxed mb-8">
                 {impactDescription}
               </p>
             )}
@@ -286,17 +286,17 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <span className="text-2xl">💡</span>
-              <h2 className="editorial-heading text-foreground">Learnings</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground">Learnings</h2>
             </div>
             
             <div className="space-y-4">
-              <p className="editorial-body text-foreground leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-foreground leading-relaxed">
                 <strong>What worked well:</strong> {whatWorked}
               </p>
-              <p className="editorial-body text-foreground leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-foreground leading-relaxed">
                 <strong>What I learned:</strong> {whatLearned}
               </p>
-              <p className="editorial-body text-foreground leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-foreground leading-relaxed">
                 <strong>What I'd do differently:</strong> {whatWouldDoDifferent}
               </p>
             </div>
@@ -310,7 +310,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <span className="text-2xl">🛠️</span>
-              <h2 className="editorial-heading text-foreground">Credits & Tools</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground">Credits & Tools</h2>
             </div>
             
             <div className="overflow-x-auto">
@@ -341,10 +341,10 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
           <div className="max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-8">
               <span className="text-2xl">🤝</span>
-              <h2 className="editorial-heading text-foreground">Let's Work Together</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground">Let's Work Together</h2>
             </div>
             
-            <p className="editorial-body text-muted-foreground mb-8">
+            <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8">
               {ctaText}
             </p>
             
