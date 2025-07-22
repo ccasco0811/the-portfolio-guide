@@ -109,24 +109,8 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
               {tagline}
             </p>
             
-            {/* Metadata grid - Opción 1: gap-2 (MUY COMPACTO) */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-sm mb-8 border border-red-500 p-4">
-              <div>
-                <p className="text-white/70 uppercase tracking-wide font-medium mb-2">TIMELINE</p>
-                <p className="text-white">2024—Present</p>
-              </div>
-              <div>
-                <p className="text-white/70 uppercase tracking-wide font-medium mb-2">ROLE</p>
-                <p className="text-white">Product Strategy · UX Design</p>
-              </div>
-              <div>
-                <p className="text-white/70 uppercase tracking-wide font-medium mb-2">TEAM</p>
-                <p className="text-white">Solo Project</p>
-              </div>
-            </div>
-
-            {/* Metadata grid - Opción 2: gap-8 (MÁS ESPACIADO) */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm border border-blue-500 p-4">
+            {/* Metadata with Flexbox */}
+            <div className="flex flex-col md:flex-row md:gap-12 gap-6 text-sm">
               <div>
                 <p className="text-white/70 uppercase tracking-wide font-medium mb-2">TIMELINE</p>
                 <p className="text-white">2024—Present</p>
