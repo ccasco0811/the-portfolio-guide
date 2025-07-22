@@ -6,109 +6,108 @@ const NumaProject: React.FC = () => {
   const projectData = {
     // Hero
     projectName: "NUMA",
-    role: "Product Strategy · UX Design · Service Design",
-    tagline: "Transforming small business banking from a 45-minute ordeal into a 3-minute digital experience that actually works.",
+    role: "Product Strategy · UX Design · Service Design · Prototyping",
+    tagline: "A conversational invoicing assistant that helps professionals create compliant invoices in seconds.",
     heroImages: [numaHeroImage],
 
     // Context
-    contextDescription: "Small business owners in Latin America were spending hours in bank branches for simple transactions, facing complex processes that didn't understand their unique needs. Traditional banking forced them into personal banking flows that ignored their business context entirely.",
-    problemStatement: "Business banking required 45+ minutes in branch visits, with confusing interfaces that treated business owners like individual consumers, creating friction at every touchpoint.",
-    whyImportant: "Small businesses are the backbone of Latin American economies, but outdated banking was holding them back from growth and efficiency. Every minute spent on banking was time stolen from building their business.",
+    contextDescription: "Creating government‑compliant digital invoices in Mexico (CFDI) was slow and error‑prone. Most existing tools were desktop‑only and complex, leaving small service providers struggling with wasted time and costly mistakes.",
+    problemStatement: "Through research, we discovered users needed a simpler way to issue invoices directly from the channel they use every day — WhatsApp.",
+    whyImportant: "Small service providers were losing valuable time and money due to slow, complex invoicing processes that led to costly mistakes and rejected filings.",
     contextImages: [],
 
     // Approach
-    approachDescription: "I led a human-centered design approach, starting with extensive field research to understand the real pain points of small business owners. Rather than assumptions, we built our solution on genuine insights from users struggling with existing systems.",
-    methodology: "My strategy focused on three key decisions that would fundamentally reshape the experience: simplifying complex flows, designing for business context, and creating trust through transparency.",
+    approachDescription: "We took a user-first approach, prioritizing the channels and language that our users already understood. Rather than forcing them to learn new tools, we met them where they were.",
+    methodology: "Our strategy focused on four key decisions that would fundamentally change how people think about invoicing in Mexico.",
     focusAreas: [
       {
         title: "User Research & Journey Mapping",
-        description: "Conducted interviews with 50+ small business owners to understand their banking behaviors, pain points, and workflows in their natural environment."
+        description: "Conducted early interviews that revealed hidden pain points and shaped our pivot towards WhatsApp-based solutions."
       },
       {
-        title: "Service Design & Process Optimization", 
-        description: "Mapped end-to-end business banking journeys and identified key friction points where we could eliminate steps and reduce cognitive load."
+        title: "Interaction Design & Prototyping", 
+        description: "Built a Wizard‑of‑Oz prototype to validate the conversational interface before full development investment."
       },
       {
-        title: "Interaction Design & Prototyping",
-        description: "Created and tested multiple interaction models specifically designed for business contexts, not adapted from personal banking."
+        title: "Service Blueprint & Validation",
+        description: "Ran A/B landing page tests to confirm demand and measure key performance indicators before launch."
       }
     ],
     approachImages: [],
 
     // Solution
-    solutionDescription: "The final solution is a mobile-first business banking platform that understands context. Instead of generic banking, NUMA provides tools that speak the language of small business owners - from cash flow management to supplier payments.",
-    keyCharacteristics: "The interface feels more like a business management tool than a bank app. Every interaction is designed around business needs: quick cash flow checks, bulk payments, and simple reporting.",
-    interfaceTone: "Professional yet approachable, with clear language that avoids banking jargon. The visual design builds trust while maintaining the speed that business owners need.",
+    solutionDescription: "NUMA is an AI‑powered invoicing assistant built directly into WhatsApp. It guides users through creating CFDI invoices step by step, detecting tax IDs (RFC), suggesting correct usage codes, validating with the SAT in real time, and storing invoice history for future use.",
+    keyCharacteristics: "The solution works entirely within WhatsApp, using conversational flows that feel natural to users. Complex tax terminology is simplified into plain‑language prompts to reduce errors.",
+    interfaceTone: "Conversational and helpful, like having a knowledgeable assistant who speaks your language and understands Mexican tax requirements.",
     keyFeatures: [
       {
-        title: "3-Minute Account Opening",
-        description: "Streamlined onboarding that collects only essential information, with smart defaults based on business type."
+        title: "WhatsApp-Native Invoicing",
+        description: "Create CFDI‑compliant invoices directly in WhatsApp, no app downloads or new platforms required."
       },
       {
-        title: "Business-Context Transactions", 
-        description: "Payment flows designed specifically for business needs - supplier payments, employee transfers, and tax preparations."
+        title: "Smart Tax Assistance", 
+        description: "Auto‑detect RFC and suggest correct usage codes, with real-time validation against Mexico's tax authority (SAT)."
       },
       {
-        title: "Real-Time Cash Flow Dashboard",
-        description: "Instant visibility into business financial health with actionable insights, not just data dumps."
+        title: "Invoice Memory & Reuse",
+        description: "Store and reuse invoice data for speed and accuracy, learning from previous transactions to make future ones even faster."
       }
     ],
     solutionImages: [],
 
     // Impact
-    impactDescription: "The results exceeded our expectations. Business owners went from avoiding digital banking to actively preferring it over branch visits.",
+    impactDescription: "The results exceeded expectations, with beta users experiencing dramatic improvements in both speed and accuracy. User feedback has been overwhelmingly positive.",
     metrics: [
       {
-        name: "Account Opening Time",
-        before: "45+ minutes",
-        after: "3 minutes"
+        name: "Time to invoice",
+        before: "10 min",
+        after: "30 s"
       },
       {
-        name: "Transaction Completion Rate",
-        before: "23%",
-        after: "87%"
-      },
-      {
-        name: "Customer Satisfaction",
-        before: "2.1/5",
-        after: "4.6/5"
-      },
-      {
-        name: "Digital Adoption",
+        name: "Errors",
         before: "12%",
-        after: "78%"
+        after: "<1%"
+      },
+      {
+        name: "Beta sign‑ups",
+        before: "0",
+        after: "120"
       }
     ],
     impactImages: [],
 
     // Learnings
-    whatWorked: "Starting with deep user research rather than banking industry assumptions. Business owners needed business solutions, not adapted personal banking.",
-    whatLearned: "Trust in financial services comes from transparency and predictability. Every interaction needs to clearly communicate what's happening and why.",
-    whatWouldDoDifferent: "I would have involved business owners in the design process even earlier, potentially as co-designers rather than just research subjects.",
+    whatWorked: "Early interviews revealed hidden pain points and shaped the pivot. Meeting users in their preferred channel (WhatsApp) was key to adoption.",
+    whatLearned: "Initial scope didn't focus on the most urgent user needs. Users valued simplicity and reliability over feature richness.",
+    whatWouldDoDifferent: "Would have started with the conversational interface from day one rather than exploring traditional app approaches first.",
 
     // Tools
     tools: [
       {
         area: "Research",
-        tools: ["Field interviews", "Journey mapping", "Usability testing", "Analytics"]
+        tools: ["Maze", "Google Forms"]
       },
       {
         area: "Design", 
-        tools: ["Figma", "Sketch", "Principle", "InVision"]
+        tools: ["Figma", "Midjourney"]
       },
       {
-        area: "Prototyping",
-        tools: ["Framer", "React Native", "Webflow"]
+        area: "Dev Handoff",
+        tools: ["Firebase", "WhatsApp API"]
       },
       {
         area: "Validation",
-        tools: ["Maze", "Google Analytics", "Hotjar", "User interviews"]
+        tools: ["Webflow", "GA4"]
+      },
+      {
+        area: "Branding",
+        tools: ["Adobe Illustrator"]
       }
     ],
 
     // CTA
-    ctaText: "Interested in how I design financial products that actually work for real businesses?",
-    ctaLink: "mailto:hello@yourname.com"
+    ctaText: "Interested in how I design products that deliver impact?",
+    ctaLink: "https://cabras.co/contact"
   };
 
   return <ProjectTemplate {...projectData} />;
