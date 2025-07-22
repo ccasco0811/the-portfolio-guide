@@ -107,7 +107,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
                 {role}
               </Badge>
             </div>
-            <h1 className="text-xl font-light text-white leading-tight mb-6">
+            <h1 className="text-xl font-light text-white leading-tight mb-4">
               {projectName}
             </h1>
             <p className="text-6xl text-gray-300 leading-tight mb-12">
