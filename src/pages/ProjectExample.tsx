@@ -6,7 +6,7 @@ const ProjectExample = () => {
     // Hero
     projectName: "NUMA",
     role: "Product Strategy · UX Design · AI Integration",
-    tagline: "AI-powered invoicing assistant that creates legal CFDI invoices in WhatsApp in under 30 seconds",
+    tagline: "A conversational invoicing assistant that helps professionals create compliant invoices in seconds",
     heroImages: [
       'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop',
       'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop'
