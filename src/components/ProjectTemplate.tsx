@@ -110,7 +110,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             <h1 className="text-xl font-light text-white leading-tight mb-6">
               {projectName}
             </h1>
-            <p className="text-6xl text-gray-300 leading-relaxed mb-12">
+            <p className="text-6xl text-gray-300 leading-tight mb-12">
               {tagline}
             </p>
           </div>
