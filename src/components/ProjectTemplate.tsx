@@ -142,12 +142,6 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
               <p className="editorial-body text-foreground leading-relaxed">
                 {contextDescription}
               </p>
-              <p className="editorial-body text-muted-foreground leading-relaxed">
-                <strong>The Problem:</strong> {problemStatement}
-              </p>
-              <p className="editorial-body text-muted-foreground leading-relaxed">
-                <strong>Why it mattered:</strong> {whyImportant}
-              </p>
             </div>
 
             {contextImages.length > 0 && (
