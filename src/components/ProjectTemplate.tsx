@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageSwitcher from './ImageSwitcher';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
@@ -112,9 +113,13 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
                 NUMA is a new AI‑powered invoicing assistant designed for professionals who need to issue CFDI (Mexico's official digital tax invoices) quickly and without errors.
                 We defined NUMA's core proposition, designed its conversational flow, and built an MVP that lets users create a legally valid invoice directly on WhatsApp in under 30 seconds.
               </p>
-              <div className="bg-muted rounded-lg aspect-video flex items-center justify-center">
-                <span className="text-muted-foreground editorial-small">Image Placeholder</span>
-              </div>
+              <ImageSwitcher 
+                images={[
+                  'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop',
+                  'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop',
+                  'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop'
+                ]}
+              />
             </div>
           </div>
         </div>
