@@ -105,22 +105,22 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             <h1 className="text-xl font-light text-white leading-tight mb-4">
               {projectName}
             </h1>
-            <p className="text-6xl text-gray-300 leading-tight mb-12">
+            <p className="text-6xl text-white leading-tight mb-12">
               {tagline}
             </p>
             
             {/* Metadata with Flexbox */}
             <div className="flex flex-col md:flex-row md:gap-12 gap-6 text-sm">
               <div>
-                <p className="text-white/70 uppercase tracking-wide font-medium mb-2">TIMELINE</p>
+                <p className="text-white uppercase tracking-wide font-medium mb-2">TIMELINE</p>
                 <p className="text-white">2024—Present</p>
               </div>
               <div>
-                <p className="text-white/70 uppercase tracking-wide font-medium mb-2">ROLE</p>
+                <p className="text-white uppercase tracking-wide font-medium mb-2">ROLE</p>
                 <p className="text-white">Product Strategy · UX Design</p>
               </div>
               <div>
-                <p className="text-white/70 uppercase tracking-wide font-medium mb-2">TEAM</p>
+                <p className="text-white uppercase tracking-wide font-medium mb-2">TEAM</p>
                 <p className="text-white">Solo Project</p>
               </div>
             </div>
