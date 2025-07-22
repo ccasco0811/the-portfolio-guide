@@ -128,14 +128,6 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
         </div>
       </section>
 
-      {/* Hero Image */}
-      {heroImages.length > 0 && (
-        <section className="editorial-section bg-background">
-          <div className="editorial-container">
-            <ImageSwitcher images={heroImages} className="max-w-4xl mx-auto" />
-          </div>
-        </section>
-      )}
 
       {/* ✨ Context Section */}
       <section className="editorial-section bg-background">
