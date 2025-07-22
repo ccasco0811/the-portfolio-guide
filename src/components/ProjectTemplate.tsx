@@ -102,10 +102,10 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       <section className="bg-black editorial-section">
         <div className="editorial-container">
           <div className="max-w-4xl">
-            <h1 className="text-xl font-light text-white leading-tight mb-4">
+            <h1 className="text-xl font-light text-white leading-tight mb-8">
               {projectName}
             </h1>
-            <p className="text-6xl text-white leading-tight mb-12">
+            <p className="text-6xl text-white leading-tight mb-8 md:mb-12">
               {tagline}
             </p>
             
