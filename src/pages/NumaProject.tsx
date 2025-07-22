@@ -7,7 +7,7 @@ const NumaProject: React.FC = () => {
     // Hero
     projectName: "NUMA",
     role: "Product Strategy · UX Design · Service Design",
-    tagline: "Transforming small business banking from a 45-minute ordeal into a 3-minute digital experience that actually works.",
+    tagline: "A conversational invoicing assistant that helps professionals create compliant invoices in seconds",
     heroImages: [numaHeroImage],
 
     // Context
