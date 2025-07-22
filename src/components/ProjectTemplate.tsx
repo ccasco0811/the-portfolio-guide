@@ -120,7 +120,14 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
                 <p className="text-white/70 uppercase tracking-wide font-medium mb-2">TIMELINE</p>
                 <p className="text-white">2024—Present</p>
               </div>
-              {/* etc... */}
+              <div>
+                <p className="text-white/70 uppercase tracking-wide font-medium mb-2">ROLE</p>
+                <p className="text-white">Product Strategy · UX Design</p>
+              </div>
+              <div>
+                <p className="text-white/70 uppercase tracking-wide font-medium mb-2">TEAM</p>
+                <p className="text-white">Solo Project</p>
+              </div>
             </div>
           </div>
         </div>
