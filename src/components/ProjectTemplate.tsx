@@ -102,11 +102,6 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       <section className="bg-black editorial-section">
         <div className="editorial-container">
           <div className="max-w-4xl">
-            <div className="flex items-center gap-4 mb-8">
-              <Badge variant="outline" className="text-white border-white/20 bg-white/10">
-                {role}
-              </Badge>
-            </div>
             <h1 className="text-xl font-light text-white leading-tight mb-4">
               {projectName}
             </h1>
