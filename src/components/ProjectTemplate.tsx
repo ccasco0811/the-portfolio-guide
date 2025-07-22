@@ -101,7 +101,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       {/* Hero Section */}
       <section className="bg-black editorial-section">
         <div className="editorial-container">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl mx-auto">
             <h1 className="text-xl font-light text-white leading-tight mb-8">
               {projectName}
             </h1>
