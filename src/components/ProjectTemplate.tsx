@@ -1,130 +1,364 @@
 import React from 'react';
 import ImageSwitcher from './ImageSwitcher';
-import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
+
+interface FocusArea {
+  title: string;
+  description: string;
+}
+
+interface KeyFeature {
+  title: string;
+  description: string;
+}
+
 interface Metric {
-  objetivo: string;
-  kpi: string;
-  meta: string;
+  name: string;
+  before: string;
+  after: string;
 }
-interface Resultado {
-  metrica: string;
-  antes: string;
-  despues: string;
+
+interface Tool {
+  area: string;
+  tools: string[];
 }
+
 interface ProjectTemplateProps {
-  // Hero Section
-  nombreProyecto: string;
+  // Hero
+  projectName: string;
+  role: string;
   tagline: string;
-  rol: string;
-  industria: string;
-  miniStats: string[];
+  heroImages: string[];
 
-  // Context & Challenge
-  panorama: string;
-  dolorClave: string;
-  oportunidad: string;
+  // Context
+  contextDescription: string;
+  problemStatement: string;
+  whyImportant: string;
+  contextImages?: string[];
 
-  // Role
-  estrategia: string;
-  uxDesign: string;
-  delivery: string;
+  // Approach
+  approachDescription: string;
+  methodology: string;
+  focusAreas: FocusArea[];
+  approachImages?: string[];
 
-  // Objectives & Metrics
-  objetivos: Metric[];
+  // Solution
+  solutionDescription: string;
+  keyCharacteristics: string;
+  interfaceTone: string;
+  keyFeatures: KeyFeature[];
+  solutionImages?: string[];
 
-  // Process
-  descubrimiento: string;
-  diseno: string;
-  iteracion: string;
-  lanzamiento: string;
-  artefactosVisuales?: string[];
+  // Impact
+  impactDescription?: string;
+  metrics: Metric[];
+  impactImages?: string[];
 
-  // Final Solution
-  imagenSolucion: string;
-  funcionamiento: string[];
-  techStack: string[];
-
-  // Results
-  resultados: Resultado[];
-
-  // Learnings & Next Steps
-  queFunciono: string;
-  queNo: string;
-  proximoPaso: string;
+  // Learnings
+  whatWorked: string;
+  whatLearned: string;
+  whatWouldDoDifferent: string;
 
   // Credits & Tools
-  creditos: {
-    area: string;
-    colaboradores: string;
-  }[];
+  tools: Tool[];
+
+  // CTA
+  ctaText: string;
+  ctaLink: string;
 }
+
 const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
-  nombreProyecto,
+  projectName,
+  role,
   tagline,
-  rol,
-  industria,
-  miniStats,
-  panorama,
-  dolorClave,
-  oportunidad,
-  estrategia,
-  uxDesign,
-  delivery,
-  objetivos,
-  descubrimiento,
-  diseno,
-  iteracion,
-  lanzamiento,
-  artefactosVisuales = [],
-  imagenSolucion,
-  funcionamiento,
-  techStack,
-  resultados,
-  queFunciono,
-  queNo,
-  proximoPaso,
-  creditos
+  heroImages,
+  contextDescription,
+  problemStatement,
+  whyImportant,
+  contextImages = [],
+  approachDescription,
+  methodology,
+  focusAreas,
+  approachImages = [],
+  solutionDescription,
+  keyCharacteristics,
+  interfaceTone,
+  keyFeatures,
+  solutionImages = [],
+  impactDescription,
+  metrics,
+  impactImages = [],
+  whatWorked,
+  whatLearned,
+  whatWouldDoDifferent,
+  tools,
+  ctaText,
+  ctaLink
 }) => {
-  return <div className="min-h-screen bg-background">
-      {/* 0. Hero Section */}
-      <section className="bg-black h-svh">
-        <div className="editorial-container h-full flex items-center">
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="bg-black editorial-section">
+        <div className="editorial-container">
           <div className="max-w-4xl">
             <div className="flex items-center gap-4 mb-8">
-              <span className="text-pretty text-lg font-medium text-slate-50">{rol}</span>
+              <Badge variant="outline" className="text-white border-white/20 bg-white/10">
+                {role}
+              </Badge>
             </div>
-            <h1 className="text-pretty text-5xl tracking-tight text-white text-left mb-6 sm:text-6xl font-light">
-              {nombreProyecto}
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight mb-6">
+              {projectName}
             </h1>
-            <p className="text-pretty text-lg font-medium text-slate-50 mb-8">Product Strategy · UX Design · Service Design · AI Prototyping · Go‑to‑Market</p>
-            
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-12">
+              {tagline}
+            </p>
           </div>
         </div>
       </section>
 
-      {/* 1. Project Overview Section */}
+      {/* Hero Image */}
+      {heroImages.length > 0 && (
+        <section className="editorial-section bg-background">
+          <div className="editorial-container">
+            <ImageSwitcher images={heroImages} className="max-w-4xl mx-auto" />
+          </div>
+        </section>
+      )}
+
+      {/* ✨ Context Section */}
       <section className="editorial-section bg-background">
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
-              <p className="editorial-body text-foreground">
-                NUMA is a new AI‑powered invoicing assistant designed for professionals who need to issue CFDI (Mexico's official digital tax invoices) quickly and without errors.
-                We defined NUMA's core proposition, designed its conversational flow, and built an MVP that lets users create a legally valid invoice directly on WhatsApp in under 30 seconds.
+            <div className="flex items-center gap-3 mb-8">
+              <span className="text-2xl">✨</span>
+              <h2 className="editorial-heading text-foreground">Context</h2>
+            </div>
+            
+            <div className="space-y-6 mb-8">
+              <p className="editorial-body text-foreground leading-relaxed">
+                {contextDescription}
               </p>
-              <ImageSwitcher 
-                images={[
-                  'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop',
-                  'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop',
-                  'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop'
-                ]}
-              />
+              <p className="editorial-body text-muted-foreground leading-relaxed">
+                <strong>The Problem:</strong> {problemStatement}
+              </p>
+              <p className="editorial-body text-muted-foreground leading-relaxed">
+                <strong>Why it mattered:</strong> {whyImportant}
+              </p>
+            </div>
+
+            {contextImages.length > 0 && (
+              <ImageSwitcher images={contextImages} />
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* 🧭 Approach Section */}
+      <section className="editorial-section bg-muted/30">
+        <div className="editorial-container">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="text-2xl">🧭</span>
+              <h2 className="editorial-heading text-foreground">Approach</h2>
+            </div>
+            
+            <div className="space-y-6 mb-8">
+              <p className="editorial-body text-foreground leading-relaxed">
+                {approachDescription}
+              </p>
+              <p className="editorial-body text-muted-foreground leading-relaxed">
+                {methodology}
+              </p>
+            </div>
+
+            <div className="mb-8">
+              <h3 className="editorial-subheading text-foreground mb-6">My Focus Areas</h3>
+              <div className="grid gap-4">
+                {focusAreas.map((area, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">{area.title}</h4>
+                      <p className="text-muted-foreground text-sm">{area.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {approachImages.length > 0 && (
+              <ImageSwitcher images={approachImages} />
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* 🚀 Solution Section */}
+      <section className="editorial-section bg-background">
+        <div className="editorial-container">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="text-2xl">🚀</span>
+              <h2 className="editorial-heading text-foreground">Solution</h2>
+            </div>
+            
+            <div className="space-y-6 mb-8">
+              <p className="editorial-body text-foreground leading-relaxed">
+                {solutionDescription}
+              </p>
+              <p className="editorial-body text-muted-foreground leading-relaxed">
+                {keyCharacteristics}
+              </p>
+              <p className="editorial-body text-muted-foreground leading-relaxed">
+                {interfaceTone}
+              </p>
+            </div>
+
+            <div className="mb-8">
+              <h3 className="editorial-subheading text-foreground mb-6">Key Features</h3>
+              <div className="grid gap-4">
+                {keyFeatures.map((feature, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">{feature.title}</h4>
+                      <p className="text-muted-foreground text-sm">{feature.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {solutionImages.length > 0 && (
+              <ImageSwitcher images={solutionImages} />
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* 📊 Impact Section */}
+      <section className="editorial-section bg-muted/30">
+        <div className="editorial-container">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="text-2xl">📊</span>
+              <h2 className="editorial-heading text-foreground">Impact</h2>
+            </div>
+            
+            {impactDescription && (
+              <p className="editorial-body text-foreground leading-relaxed mb-8">
+                {impactDescription}
+              </p>
+            )}
+
+            <div className="overflow-x-auto mb-8">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="border-b border-border">
+                    <th className="text-left py-4 px-2 font-semibold text-foreground">Metric</th>
+                    <th className="text-left py-4 px-2 font-semibold text-foreground">Before</th>
+                    <th className="text-left py-4 px-2 font-semibold text-foreground">After</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {metrics.map((metric, index) => (
+                    <tr key={index} className="border-b border-border/50">
+                      <td className="py-4 px-2 text-foreground">{metric.name}</td>
+                      <td className="py-4 px-2 text-muted-foreground">{metric.before}</td>
+                      <td className="py-4 px-2 text-primary font-semibold">{metric.after}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {impactImages.length > 0 && (
+              <ImageSwitcher images={impactImages} />
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* 💡 Learnings Section */}
+      <section className="editorial-section bg-background">
+        <div className="editorial-container">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="text-2xl">💡</span>
+              <h2 className="editorial-heading text-foreground">Learnings</h2>
+            </div>
+            
+            <div className="space-y-4">
+              <p className="editorial-body text-foreground leading-relaxed">
+                <strong>What worked well:</strong> {whatWorked}
+              </p>
+              <p className="editorial-body text-foreground leading-relaxed">
+                <strong>What I learned:</strong> {whatLearned}
+              </p>
+              <p className="editorial-body text-foreground leading-relaxed">
+                <strong>What I'd do differently:</strong> {whatWouldDoDifferent}
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-    </div>;
+      {/* 🛠️ Credits & Tools Section */}
+      <section className="editorial-section bg-muted/30">
+        <div className="editorial-container">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="text-2xl">🛠️</span>
+              <h2 className="editorial-heading text-foreground">Credits & Tools</h2>
+            </div>
+            
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="border-b border-border">
+                    <th className="text-left py-4 px-2 font-semibold text-foreground">Area</th>
+                    <th className="text-left py-4 px-2 font-semibold text-foreground">Tools</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {tools.map((tool, index) => (
+                    <tr key={index} className="border-b border-border/50">
+                      <td className="py-4 px-2 text-foreground font-medium">{tool.area}</td>
+                      <td className="py-4 px-2 text-muted-foreground">{tool.tools.join(', ')}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 🤝 CTA Final Section */}
+      <section className="editorial-section bg-primary/5">
+        <div className="editorial-container text-center">
+          <div className="max-w-2xl mx-auto">
+            <div className="flex items-center justify-center gap-3 mb-8">
+              <span className="text-2xl">🤝</span>
+              <h2 className="editorial-heading text-foreground">Let's Work Together</h2>
+            </div>
+            
+            <p className="editorial-body text-muted-foreground mb-8">
+              {ctaText}
+            </p>
+            
+            <a 
+              href={ctaLink}
+              className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground hover:bg-primary/90 transition-all duration-300 hover:scale-105"
+            >
+              Let's Connect
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 };
+
 export default ProjectTemplate;

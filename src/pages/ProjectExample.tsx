@@ -2,116 +2,137 @@ import React from 'react';
 import ProjectTemplate from '@/components/ProjectTemplate';
 
 const ProjectExample = () => {
-  const exampleData = {
-    // Hero Section
-    nombreProyecto: "A conversational invoicing assistant that helps professionals create compliant invoices in seconds.",
-    tagline: "Factura CFDI en 30 s vía WhatsApp",
-    rol: "Numa",
-    industria: "Fintech / SaaS B2B",
-    miniStats: ["⏱ 30 s", "🤖 95% auto", "💰 $500k MXN pre‑sales"],
-    
-    // Context & Challenge
-    panorama: "Las PyMEs mexicanas enfrentan multas millonarias por no facturar correctamente. El proceso tradicional toma más de 10 minutos y requiere conocimiento técnico específico.",
-    dolorClave: "⚠ Multas de $173k MXN por facturación incorrecta o tardía. 'No entiendo por qué es tan complicado facturar' - Usuario PyME",
-    oportunidad: "WhatsApp tiene 95% de penetración en México. Automatizar facturación vía chat elimina fricciones y democratiza el cumplimiento fiscal.",
-    
-    // Role
-    estrategia: "Definí hipótesis de producto y KPIs de validación. Diseñé experimentos lean para validar demanda antes del desarrollo.",
-    uxDesign: "Mapas de journey end-to-end, entrevistas cualitativas (n = 12), diseño de conversaciones para WhatsApp Business API.",
-    delivery: "Coordiné desarrollo técnico, integración de IA, implementación de analytics con GA4 y gestión de lanzamiento.",
-    
-    // Objectives & Metrics
-    objetivos: [
+  const numaData = {
+    // Hero
+    projectName: "NUMA",
+    role: "Product Strategy · UX Design · AI Integration",
+    tagline: "AI-powered invoicing assistant that creates legal CFDI invoices in WhatsApp in under 30 seconds",
+    heroImages: [
+      'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop'
+    ],
+
+    // Context
+    contextDescription: "NUMA is a new AI-powered invoicing assistant designed for professionals who need to issue CFDI (Mexico's official digital tax invoices) quickly and without errors. We defined NUMA's core proposition, designed its conversational flow, and built an MVP that lets users create a legally valid invoice directly on WhatsApp in under 30 seconds.",
+    problemStatement: "Small Mexican businesses face millions in fines for incorrect invoicing. The traditional process takes over 10 minutes and requires specific technical knowledge that most small business owners don't have.",
+    whyImportant: "The service was born from research into compliance pain points for small firms. We initially explored another regulatory workflow, but interviews revealed a deeper need: simple, fast e-invoicing. We pivoted to focus on that urgent problem, designing an experience that feels effortless yet satisfies strict tax authority requirements.",
+    contextImages: [
+      'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop'
+    ],
+
+    // Approach
+    approachDescription: "I led the product strategy from concept to MVP, focusing on user research, conversational design, and AI integration. My approach combined structured experimentation with rapid prototyping to validate the core value proposition before development.",
+    methodology: "We used lean startup methodology, conducting user interviews with 12+ small business owners and accountants, creating conversation flows in Figma, and testing WhatsApp Business API integrations.",
+    focusAreas: [
       {
-        objetivo: "Reducir fricción al facturar",
-        kpi: "Tiempo de emisión",
-        meta: "≤ 30 s"
+        title: "User Research & Journey Mapping",
+        description: "Conducted interviews with small business owners and accountants to understand pain points in CFDI compliance"
       },
       {
-        objetivo: "Validar demanda real",
-        kpi: "Ventas preventa",
-        meta: "≥ 50 cuentas"
+        title: "Conversational UX Design",
+        description: "Designed intuitive WhatsApp conversation flows that guide users through complex tax requirements"
       },
       {
-        objetivo: "Automatizar proceso",
-        kpi: "Intervención manual",
-        meta: "≤ 5%"
+        title: "AI Integration & Validation",
+        description: "Implemented AI-powered data extraction and validation systems with Mexico's tax authority (SAT)"
       }
     ],
-    
-    // Process
-    descubrimiento: "Investigación con contadores y PyMEs. Webinar para validar dolor. Landing page para captar demanda temprana (120 leads en 2 semanas).",
-    diseno: "Wireframes de flujo conversacional. Prototipo en Figma. Prompt engineering para IA que extrae datos de fotos de productos.",
-    iteracion: "A/B test de mensajes WhatsApp. Métricas de abandono por paso. Pivot del flow inicial basado en feedback real.",
-    lanzamiento: "Go-live con 20 beta testers. Implementación de pixel de Facebook y GA4. Loop de feedback semanal con usuarios.",
-    artefactosVisuales: ["Journey Map", "Wireframes WhatsApp", "Esquema ManyChat", "Dashboard Analytics"],
-    
-    // Final Solution
-    imagenSolucion: "Screenshot: Chat WhatsApp con factura CFDI generada en 30s",
-    funcionamiento: [
-      "Usuario envía foto del producto por WhatsApp",
-      "IA extrae automáticamente datos (descripción, precio, cantidad)",
-      "Sistema valida información fiscal con APIs del SAT",
-      "Se genera CFDI válido y se envía al cliente",
-      "Factura se almacena en dashboard web para seguimiento"
+    approachImages: [
+      'https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=800&h=600&fit=crop'
     ],
-    techStack: ["WhatsApp Cloud API", "Facturama API", "OpenAI GPT-4V", "Next.js", "Vercel", "MongoDB"],
-    
-    // Results
-    resultados: [
+
+    // Solution
+    solutionDescription: "NUMA's interface uses clear prompts and instant feedback. It auto-detects the user's RFC (tax ID), suggests correct usage codes, validates with the SAT (Mexico's tax authority), and stores invoice history for future use.",
+    keyCharacteristics: "The solution transforms a complex 10+ minute process into a simple 30-second conversation. Users simply send a photo of their product or service details via WhatsApp, and NUMA handles all the technical complexity behind the scenes.",
+    interfaceTone: "The tone is friendly and conversational, guiding users step-by-step while maintaining full legal accuracy. We designed it to feel like texting a helpful assistant rather than using traditional accounting software.",
+    keyFeatures: [
       {
-        metrica: "Tiempo de facturación",
-        antes: "> 10 min",
-        despues: "30 s"
+        title: "Create invoices directly in WhatsApp",
+        description: "Users send a photo of their product and NUMA extracts all necessary information automatically"
       },
       {
-        metrica: "Adopción contadores",
-        antes: "0",
-        despues: "+120 pagos de preventa"
+        title: "Auto-validation with tax authority",
+        description: "Real-time validation with SAT (Mexico's tax authority) ensures 100% legal compliance"
       },
       {
-        metrica: "Tickets de soporte",
-        antes: "—",
-        despues: "–25% (primer mes)"
+        title: "Friendly guidance through complex flows",
+        description: "Conversational interface that simplifies tax requirements into plain language"
       },
       {
-        metrica: "Tasa de conversión",
-        antes: "—",
-        despues: "18% (landing a pago)"
+        title: "Instant invoice generation",
+        description: "Legally valid CFDI invoices generated and delivered in under 30 seconds"
       }
     ],
-    
-    // Learnings & Next Steps
-    queFunciono: "Storytelling con 'terror a multas' aumentó conversión 18%. WhatsApp como canal redujo significativamente la fricción de adopción. IA para extracción de datos fue el diferenciador clave.",
-    queNo: "Webhook inicial saturó la API de Facturama. Onboarding muy técnico para contadores tradicionales. Faltó validación de integración contable.",
-    proximoPaso: "Roadmap Q1 2025: Integración con CONTPAQi y otros ERPs. Facturación recurrente automática. Expansión a Colombia y Argentina.",
-    
+    solutionImages: [
+      'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=800&h=600&fit=crop'
+    ],
+
+    // Impact
+    impactDescription: "We tested NUMA with 120 beta users, measuring key metrics like time to invoice and error rate. The results exceeded our expectations and validated the core value proposition.",
+    metrics: [
+      {
+        name: "Time to complete invoice",
+        before: "10+ minutes",
+        after: "30 seconds"
+      },
+      {
+        name: "Error rate",
+        before: "12%",
+        after: "< 1%"
+      },
+      {
+        name: "User adoption",
+        before: "0 users",
+        after: "120+ beta users"
+      },
+      {
+        name: "Conversion rate (landing to payment)",
+        before: "—",
+        after: "18%"
+      }
+    ],
+    impactImages: [
+      'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800&h=600&fit=crop'
+    ],
+
+    // Learnings
+    whatWorked: "The storytelling approach focusing on 'fear of fines' significantly increased conversion rates. WhatsApp as a channel dramatically reduced adoption friction, and AI-powered data extraction became our key differentiator.",
+    whatLearned: "User research was crucial - we pivoted from our original idea based on interview insights. The conversational interface needed to balance friendliness with the seriousness of tax compliance. Integration complexity with existing accounting systems was underestimated.",
+    whatWouldDoDifferent: "I would validate accounting software integrations earlier in the process. The initial webhook setup saturated the invoicing API, and the onboarding was too technical for traditional accountants. More user testing with the actual target demographic would have caught these issues sooner.",
+
     // Credits & Tools
-    creditos: [
+    tools: [
+      {
+        area: "Research",
+        tools: ["User Interviews", "Google Forms", "Loom"]
+      },
+      {
+        area: "Design",
+        tools: ["Figma", "Midjourney", "WhatsApp Business API"]
+      },
       {
         area: "Development",
-        colaboradores: "1 ingeniero full-stack (Freddy)"
+        tools: ["Next.js", "OpenAI GPT-4V", "Facturama API"]
       },
       {
-        area: "IA & Automation",
-        colaboradores: "OpenAI GPT-4V, Zapier, ManyChat"
+        area: "Analytics",
+        tools: ["Google Analytics 4", "Hotjar", "Facebook Pixel"]
       },
       {
-        area: "Design & Research",
-        colaboradores: "Figma, Midjourney, Loom"
-      },
-      {
-        area: "Analytics & Tracking",
-        colaboradores: "Google Tag Manager, GA4, Hotjar"
-      },
-      {
-        area: "Legal & Fiscal",
-        colaboradores: "Asesor fiscal externo"
+        area: "Validation",
+        tools: ["ManyChat", "Zapier", "SAT API"]
       }
-    ]
+    ],
+
+    // CTA
+    ctaText: "Interested in how I design products that deliver measurable impact through AI and conversational interfaces?",
+    ctaLink: "mailto:hello@goatpath.com"
   };
 
-  return <ProjectTemplate {...exampleData} />;
+  return <ProjectTemplate {...numaData} />;
 };
 
 export default ProjectExample;
