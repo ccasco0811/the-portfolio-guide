@@ -109,8 +109,8 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
               {tagline}
             </p>
             
-            {/* Metadata grid - Opción 1: gap-4 */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm mb-8">
+            {/* Metadata grid - Opción 1: gap-2 (MUY COMPACTO) */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-sm mb-8 border border-red-500 p-4">
               <div>
                 <p className="text-white/70 uppercase tracking-wide font-medium mb-2">TIMELINE</p>
                 <p className="text-white">2024—Present</p>
@@ -125,8 +125,8 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
               </div>
             </div>
 
-            {/* Metadata grid - Opción 2: gap-6 */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+            {/* Metadata grid - Opción 2: gap-8 (MÁS ESPACIADO) */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm border border-blue-500 p-4">
               <div>
                 <p className="text-white/70 uppercase tracking-wide font-medium mb-2">TIMELINE</p>
                 <p className="text-white">2024—Present</p>
