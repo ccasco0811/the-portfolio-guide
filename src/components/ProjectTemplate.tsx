@@ -141,8 +141,10 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             </div>
             
             {contextImages.length > 0 && (
-              <div className="mb-8">
-                <ImageSwitcher images={contextImages} />
+              <div className="mb-8 -mx-4 md:-mx-6 lg:-mx-8">
+                <div className="max-w-6xl mx-auto">
+                  <ImageSwitcher images={contextImages} className="h-96 md:h-[500px] lg:h-[600px]" />
+                </div>
               </div>
             )}
 
