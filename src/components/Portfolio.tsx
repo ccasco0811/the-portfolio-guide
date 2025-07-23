@@ -61,7 +61,7 @@ const Portfolio = () => {
               {
                 id: 1,
                 title: 'NUMA AI Assistant',
-                slug: 'numa-project',
+                slug: 'numa',
                 description: 'AI-powered invoicing assistant for CFDI compliance. Built conversational flow for WhatsApp-based invoice creation in under 30 seconds.',
                 image: numaCaseImage,
                 category: 'AI & Automation'
