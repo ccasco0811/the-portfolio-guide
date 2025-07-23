@@ -38,12 +38,13 @@ const ImageSwitcher: React.FC<ImageSwitcherProps> = ({
   }
 
   return (
-    <div className={`relative bg-muted rounded-lg ${aspectRatio} overflow-hidden ${className}`}>
+    <div className={`relative bg-muted rounded-lg overflow-hidden flex items-center justify-center ${className}`}>
       {/* Main Image */}
       <img 
         src={images[currentImageIndex]} 
         alt={`Image ${currentImageIndex + 1} of ${images.length}`}
-        className="w-full h-full object-contain"
+        className="max-w-full max-h-full object-contain"
+        style={{ objectFit: 'contain' }}
       />
 
       {/* Navigation Controls */}
