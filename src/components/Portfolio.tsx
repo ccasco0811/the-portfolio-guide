@@ -63,7 +63,7 @@ const Portfolio = () => {
                 title: 'NUMA AI Assistant',
                 slug: 'numa',
                 description: 'AI-powered invoicing assistant for CFDI compliance. Built conversational flow for WhatsApp-based invoice creation in under 30 seconds.',
-                image: numaCaseImage,
+                image: '/lovable-uploads/1e2a7109-7c0b-4bec-a8db-ead64c5d4180.png',
                 category: 'AI & Automation'
               }
             ].map((project) => (
