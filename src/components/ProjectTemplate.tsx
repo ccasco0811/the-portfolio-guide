@@ -139,9 +139,11 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             </div>
             
             <div className="space-y-6 mb-8">
-              <p className="editorial-body text-foreground leading-relaxed">
-                {contextDescription}
-              </p>
+              <div className="editorial-body text-foreground leading-relaxed space-y-6">
+                {contextDescription.split('\n\n').map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </div>
             </div>
 
             {contextImages.length > 0 && (
