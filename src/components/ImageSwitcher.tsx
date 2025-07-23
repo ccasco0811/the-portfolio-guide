@@ -43,7 +43,7 @@ const ImageSwitcher: React.FC<ImageSwitcherProps> = ({
       <img 
         src={images[currentImageIndex]} 
         alt={`Image ${currentImageIndex + 1} of ${images.length}`}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-contain"
       />
 
       {/* Navigation Controls */}
