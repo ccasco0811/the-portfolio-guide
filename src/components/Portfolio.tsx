@@ -32,7 +32,9 @@ const Portfolio = () => {
             {/* CTA Button */}
             <div className="flex items-center">
               <a 
-                href="#projects" 
+                href="https://www.linkedin.com/in/carloscarrascoe/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105"
               >
                 Let&apos;s collaborate together
