@@ -8,7 +8,7 @@ const NumaProject: React.FC = () => {
     projectName: "NUMA",
     role: "Product Strategy · UX Design · Service Design",
     tagline: "A conversational invoicing assistant that helps professionals create compliant invoices in seconds",
-    heroImages: [numaHeroImage],
+    heroImages: ['/lovable-uploads/77f7effb-2c25-4511-8019-38f7831625d2.png'],
 
     // Context
     contextDescription: "Creating government-compliant digital invoices in Mexico (CFDI) was slow and error-prone. Most existing tools were desktop-only and complex, leaving small service providers struggling with wasted time and costly mistakes. Through research, we discovered users needed a simpler way to issue invoices directly from the channel they use every day - WhatsApp.",
