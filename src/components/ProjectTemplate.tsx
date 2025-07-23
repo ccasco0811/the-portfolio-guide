@@ -132,7 +132,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
 
 
       {/* ✨ Context Section */}
-      <section className="editorial-section bg-background">
+      <section className="editorial-section bg-background mt-12 md:mt-16 lg:mt-20">
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -163,7 +163,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       </section>
 
       {/* 🧭 Approach Section */}
-      <section className="editorial-section bg-muted/30">
+      <section className="editorial-section bg-muted/30 mt-12 md:mt-16 lg:mt-20">
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -203,7 +203,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       </section>
 
       {/* 🚀 Solution Section */}
-      <section className="editorial-section bg-background">
+      <section className="editorial-section bg-background mt-12 md:mt-16 lg:mt-20">
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -246,7 +246,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       </section>
 
       {/* 📊 Impact Section */}
-      <section className="editorial-section bg-muted/30">
+      <section className="editorial-section bg-muted/30 mt-12 md:mt-16 lg:mt-20">
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -289,7 +289,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       </section>
 
       {/* 💡 Learnings Section */}
-      <section className="editorial-section bg-background">
+      <section className="editorial-section bg-background mt-12 md:mt-16 lg:mt-20">
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -313,7 +313,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       </section>
 
       {/* 🛠️ Credits & Tools Section */}
-      <section className="editorial-section bg-muted/30">
+      <section className="editorial-section bg-muted/30 mt-12 md:mt-16 lg:mt-20">
         <div className="editorial-container">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -344,7 +344,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
       </section>
 
       {/* 🤝 CTA Final Section */}
-      <section className="editorial-section bg-primary/5">
+      <section className="editorial-section bg-primary/5 mt-12 md:mt-16 lg:mt-20">
         <div className="editorial-container text-center">
           <div className="max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-8">
