@@ -139,7 +139,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             </div>
             
             <div className="space-y-6 mb-8">
-              <div className="editorial-body text-foreground leading-relaxed space-y-6">
+              <div className="editorial-body text-foreground leading-relaxed space-y-8">
                 {contextDescription.split('\n\n').map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
