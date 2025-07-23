@@ -54,7 +54,7 @@ const Portfolio = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 xl:gap-10">
+          <div className="flex justify-center">
             {[
               {
                 id: 1,
@@ -63,23 +63,7 @@ const Portfolio = () => {
                 description: 'AI-powered invoicing assistant for CFDI compliance. Built conversational flow for WhatsApp-based invoice creation in under 30 seconds.',
                 image: numaCaseImage,
                 category: 'AI & Automation'
-              },
-              {
-                id: 2,
-                title: 'Lexa Platform',
-                slug: 'lexa-project',
-                description: 'Legal tech platform streamlining document processing. Reduced processing time by 75% through intelligent automation.',
-                image: lexaCaseImage,
-                category: 'Legal Tech'
-              },
-              {
-                id: 3,
-                title: 'Innovation Framework',
-                slug: 'framework-project',
-                description: 'Structured methodology for idea validation. Implemented across 15+ startups with 80% success rate in market fit.',
-                image: heroImage,
-                category: 'Strategy'
-              },
+              }
             ].map((project) => (
               <article
                 key={project.id}
