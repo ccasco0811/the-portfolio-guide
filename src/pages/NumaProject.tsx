@@ -14,7 +14,7 @@ const NumaProject: React.FC = () => {
     contextDescription: "Creating government-compliant digital invoices in Mexico (CFDI) was slow and error-prone. Most existing tools were desktop-only and complex, leaving small service providers struggling with wasted time and costly mistakes. Through research, we discovered users needed a simpler way to issue invoices directly from the channel they use every day - WhatsApp.\n\nIn NUMA, my role has been to lead the end-to-end product design process: driving research, mapping journeys, prototyping conversational flows, and guiding the team to turn those insights into a validated MVP. I also created and ran experiments - such as building and configuring landing pages, setting up Meta campaigns and GTM tracking - with the goal of validating the riskiest business hypotheses and avoiding unnecessary development costs before validation.",
     problemStatement: "",
     whyImportant: "",
-    contextImages: [],
+    contextImages: ['/lovable-uploads/ecaf76e8-3040-4794-b740-411a173c58ab.png'],
 
     // Approach
     approachDescription: "Prioritized WhatsApp as the main channel to meet users where they already work. Simplified tax terminology into plain‑language prompts to reduce errors. Built a Wizard‑of‑Oz prototype to validate before development. Ran A/B landing page tests to confirm demand and measure KPIs.",
