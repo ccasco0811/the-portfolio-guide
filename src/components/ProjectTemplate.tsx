@@ -33,6 +33,7 @@ interface ProjectTemplateProps {
 
   // Context
   contextDescription: string;
+  myRole?: string;
   problemStatement: string;
   whyImportant: string;
   contextImages?: string[];
@@ -74,6 +75,7 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
   tagline,
   heroImages,
   contextDescription,
+  myRole,
   problemStatement,
   whyImportant,
   contextImages = [],
@@ -139,12 +141,19 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
             </div>
             
             <div className="mb-16">
-              <div className="editorial-body text-foreground leading-relaxed">
-                {contextDescription.split('\n\n').map((paragraph, index) => (
-                  <p key={index} className={index === 0 ? "mb-16" : "mb-8"}>{paragraph}</p>
-                ))}
-              </div>
+              <p className="editorial-body text-foreground leading-relaxed mb-16">
+                {contextDescription}
+              </p>
             </div>
+
+            {myRole && (
+              <div className="mb-16">
+                <h3 className="editorial-subheading text-foreground mb-6">My Role</h3>
+                <p className="editorial-body text-foreground leading-relaxed">
+                  {myRole}
+                </p>
+              </div>
+            )}
 
             {contextImages.length > 0 && (
               <ImageSwitcher images={contextImages} />
