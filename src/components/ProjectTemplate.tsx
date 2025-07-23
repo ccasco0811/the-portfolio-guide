@@ -140,6 +140,12 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
               <h2 className="editorial-heading text-foreground">Context</h2>
             </div>
             
+            {contextImages.length > 0 && (
+              <div className="mb-8">
+                <ImageSwitcher images={contextImages} />
+              </div>
+            )}
+
             <div className="mb-16">
               <p className="editorial-body text-foreground leading-relaxed mb-16">
                 {contextDescription}
@@ -153,10 +159,6 @@ const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
                   {myRole}
                 </p>
               </div>
-            )}
-
-            {contextImages.length > 0 && (
-              <ImageSwitcher images={contextImages} />
             )}
           </div>
         </div>
