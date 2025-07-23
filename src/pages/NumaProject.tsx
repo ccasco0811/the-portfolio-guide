@@ -15,7 +15,7 @@ const NumaProject: React.FC = () => {
     myRole: "I led the end-to-end product design process: driving research, mapping journeys, prototyping conversational flows, and guiding the team to turn those insights into a validated MVP. I also created and ran experiments - such as building and configuring landing pages, setting up Meta campaigns and GTM tracking - with the goal of validating the riskiest business hypotheses and avoiding unnecessary development costs before validation.",
     problemStatement: "",
     whyImportant: "",
-    contextImages: ['/lovable-uploads/964b6529-ef23-4cd9-9d89-5ccf328dec85.png'],
+    contextImages: ['/lovable-uploads/7b21f863-f618-48bb-905e-224b13c2d9a6.png'],
 
     // Approach
     approachDescription: "Prioritized WhatsApp as the main channel to meet users where they already work. Simplified tax terminology into plain‑language prompts to reduce errors. Built a Wizard‑of‑Oz prototype to validate before development. Ran A/B landing page tests to confirm demand and measure KPIs.",
