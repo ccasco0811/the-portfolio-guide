@@ -143,82 +143,86 @@ const NumaProject: React.FC = () => {
               </div>
               <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
                 {/* Journey Cards - Top Row */}
-                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
-                  <div className="w-15 h-15 flex justify-start items-center gap-2">
-                    <img className="w-15 h-15" src="/placeholder.svg" alt="Advocacy icon" />
+                <div className="w-72 h-72 px-8 pt-2 pb-8 rounded-lg outline outline-1 outline-offset-[-1px] outline-black inline-flex flex-col justify-center items-start gap-4">
+                  <div className="w-14 h-14 inline-flex justify-start items-center gap-2.5">
+                    <img className="w-14 h-14" src="https://placehold.co/60x60" alt="Advocacy icon" />
                   </div>
-                  <div className="w-full flex flex-col justify-start items-start gap-4">
-                    <div className="text-black text-sm font-light leading-7">
+                  <div className="self-stretch flex flex-col justify-start items-start gap-4">
+                    <div className="justify-start text-black text-sm font-light font-epilogue leading-7">
                       Advocacy
                     </div>
-                    <div className="w-full h-24 text-black text-base font-normal leading-6">
+                    <div className="self-stretch justify-start text-black text-base font-normal font-epilogue leading-normal">
                       Shares NUMA in WhatsApp groups, posts on social media, and refers friends.
                     </div>
                   </div>
                 </div>
-                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
-                  <div className="w-15 h-15 flex justify-start items-center gap-2">
-                    <img className="w-15 h-15" src="/placeholder.svg" alt="Adoption icon" />
+                
+                <div className="w-72 h-72 px-8 pt-2 pb-8 rounded-lg outline outline-1 outline-offset-[-1px] outline-black inline-flex flex-col justify-center items-start gap-4">
+                  <div className="w-14 h-14 inline-flex justify-start items-center gap-2.5">
+                    <img className="w-14 h-14" src="https://placehold.co/60x60" alt="Adoption icon" />
                   </div>
-                  <div className="w-full flex flex-col justify-start items-start gap-4">
-                    <div className="text-black text-sm font-light leading-7">
+                  <div className="self-stretch flex flex-col justify-start items-start gap-4">
+                    <div className="justify-start text-black text-sm font-light font-epilogue leading-7">
                       Adoption
                     </div>
-                    <div className="w-full h-24 text-black text-base font-normal leading-6">
+                    <div className="self-stretch justify-start text-black text-base font-normal font-epilogue leading-normal">
                       Clients issue invoices themselves, review weekly summaries, and reduce accountant costs.
                     </div>
                   </div>
                 </div>
-                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
-                  <div className="w-15 h-15 flex justify-start items-center gap-2">
-                    <img className="w-15 h-15" src="/placeholder.svg" alt="Onboarding icon" />
+                
+                <div className="w-72 h-72 px-8 pt-2 pb-8 rounded-lg outline outline-1 outline-offset-[-1px] outline-black inline-flex flex-col justify-center items-start gap-4">
+                  <div className="w-14 h-14 inline-flex justify-start items-center gap-2.5">
+                    <img className="w-14 h-14" src="https://placehold.co/60x60" alt="Onboarding icon" />
                   </div>
-                  <div className="w-full flex flex-col justify-start items-start gap-4">
-                    <div className="text-black text-sm font-light leading-7">
+                  <div className="self-stretch flex flex-col justify-start items-start gap-4">
+                    <div className="justify-start text-black text-sm font-light font-epilogue leading-7">
                       Onboarding
                     </div>
-                    <div className="w-full h-24 text-black text-base font-normal leading-6">
+                    <div className="self-stretch justify-start text-black text-base font-normal font-epilogue leading-normal">
                       Uploads Digital Tax Certificate, issues first invoice, and shares with staff.
                     </div>
                   </div>
                 </div>
                 
                 {/* Journey Cards - Bottom Row */}
-                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
-                  <div className="w-15 h-15 flex justify-start items-center gap-2">
-                    <img className="w-15 h-15" src="/placeholder.svg" alt="Decision icon" />
+                <div className="w-72 h-72 px-8 pt-2 pb-8 rounded-lg outline outline-1 outline-offset-[-1px] outline-black inline-flex flex-col justify-center items-start gap-4">
+                  <div className="w-14 h-14 inline-flex justify-start items-center gap-2.5">
+                    <img className="w-14 h-14" src="https://placehold.co/60x60" alt="Decision icon" />
                   </div>
-                  <div className="w-full flex flex-col justify-start items-start gap-4">
-                    <div className="text-black text-sm font-light leading-7">
+                  <div className="self-stretch flex flex-col justify-start items-start gap-4">
+                    <div className="justify-start text-black text-sm font-light font-epilogue leading-7">
                       Decision
                     </div>
-                    <div className="w-full h-24 text-black text-base font-normal leading-6">
+                    <div className="self-stretch justify-start text-black text-base font-normal font-epilogue leading-normal">
                       Attends a 15 minute demo, asks colleagues, compares against current accountant, and starts a 30 day trial.
                     </div>
                   </div>
                 </div>
-                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
-                  <div className="flex justify-start items-center gap-2">
-                    <img className="w-15 h-15" src="/placeholder.svg" alt="Consideration icon" />
+                
+                <div className="w-72 h-72 px-8 pt-2 pb-8 rounded-lg outline outline-1 outline-offset-[-1px] outline-black inline-flex flex-col justify-center items-start gap-4">
+                  <div className="w-14 h-14 inline-flex justify-start items-center gap-2.5">
+                    <img className="w-14 h-14" src="https://placehold.co/60x60" alt="Consideration icon" />
                   </div>
-                  <div className="w-full flex flex-col justify-start items-start gap-4">
-                    <div className="text-black text-sm font-light leading-7">
+                  <div className="self-stretch flex flex-col justify-start items-start gap-4">
+                    <div className="justify-start text-black text-sm font-light font-epilogue leading-7">
                       Consideration
                     </div>
-                    <div className="w-full h-24 text-black text-base font-normal leading-6">
+                    <div className="self-stretch justify-start text-black text-base font-normal font-epilogue leading-normal">
                       Visits website, watches a 30-second demo, calculates savings, and books a demo.
                     </div>
                   </div>
                 </div>
-                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
-                  <div className="w-15 h-15 flex justify-start items-center gap-2">
-                    <img className="w-15 h-15" src="/placeholder.svg" alt="Awareness icon" />
+                
+                <div className="w-72 h-72 px-8 pt-2 pb-8 rounded-lg outline outline-1 outline-offset-[-1px] outline-black inline-flex flex-col justify-center items-start gap-4">
+                  <div className="w-14 h-14 inline-flex justify-start items-center gap-2.5">
+                    <img className="w-14 h-14" src="https://placehold.co/60x60" alt="Awareness icon" />
                   </div>
-                  <div className="w-full flex flex-col justify-start items-start gap-4">
-                    <div className="text-black text-sm font-light leading-7">
+                  <div className="self-stretch flex flex-col justify-start items-start gap-4">
+                    <div className="justify-start text-black text-sm font-light font-epilogue leading-7">
                       Awareness
                     </div>
-                    <div className="w-full text-black text-base font-normal leading-6">
+                    <div className="self-stretch justify-start text-black text-base font-normal font-epilogue leading-normal">
                       Discovers NUMA through Google searches, Facebook ads, and news about SAT changes.
                     </div>
                   </div>
