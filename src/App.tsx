@@ -24,7 +24,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/project-example" element={<ProjectExample />} />
-          <Route path="/numa" element={<GitHubRedirect />} />
+          <Route path="/numa" element={<NumaProject />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
