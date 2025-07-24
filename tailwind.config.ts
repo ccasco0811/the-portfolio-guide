@@ -71,6 +71,7 @@ export default {
 			fontFamily: {
 				'moderustic': ['Moderustic', 'sans-serif'],
 				'inter': ['Inter', 'sans-serif'],
+				'epilogue': ['Epilogue', 'sans-serif'],
 			},
 			fontSize: {
 				'hero': 'var(--text-hero)',

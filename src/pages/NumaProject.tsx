@@ -3,264 +3,231 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const NumaProject: React.FC = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="bg-background px-6 pt-16 pb-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-6">
-            <h1 className="text-sm font-medium text-muted-foreground tracking-wider uppercase mb-8">
-              Numa
-            </h1>
-          </div>
-          
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8">
-              AI assistant that helps professionals create compliant invoices in seconds
-            </h2>
-          </div>
-          
-          {/* Metadata */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 text-sm text-muted-foreground">
-            <div className="text-center">
-              <span className="uppercase tracking-wide">UX/UI</span>
+    <div className="w-full h-full bg-white overflow-hidden flex flex-col justify-start items-start font-epilogue">
+      <div className="w-full bg-white overflow-hidden flex flex-col justify-center items-center">
+        <div className="w-full max-w-[1251px] px-4 md:px-8 pb-2 flex flex-col justify-start items-start">
+          <div className="pt-16 pb-2 px-6 flex flex-col justify-center items-center gap-14 w-full">
+            {/* Hero Section */}
+            <div className="w-full flex flex-col justify-center items-center gap-2">
+              <div className="max-w-[571px] w-full flex flex-col justify-center items-start gap-8">
+                <div className="w-full h-7 text-black text-lg font-medium leading-7">
+                  Numa
+                </div>
+                <div className="w-full text-black text-5xl font-bold leading-[60px]">
+                  AI assistant that helps professionals create compliant invoices in seconds
+                </div>
+                <div className="flex justify-start items-center gap-10 flex-wrap">
+                  <div className="py-2 flex flex-col justify-start items-start gap-4">
+                    <div className="text-center text-black text-sm font-light uppercase leading-5">
+                      Timeline
+                    </div>
+                    <div className="flex flex-col justify-center items-start">
+                      <div className="text-center text-[#1E1E1E] text-base font-normal leading-[26px]">
+                        2024-Present
+                      </div>
+                    </div>
+                  </div>
+                  <div className="py-2 flex flex-col justify-start items-start gap-4">
+                    <div className="text-center text-black text-sm font-light uppercase leading-5">
+                      Role
+                    </div>
+                    <div className="flex flex-col justify-center items-start">
+                      <div className="text-center text-[#1E1E1E] text-base font-normal leading-[26px]">
+                        Product Strategy
+                      </div>
+                    </div>
+                  </div>
+                  <div className="py-2 flex flex-col justify-start items-start gap-4">
+                    <div className="text-center text-black text-sm font-light uppercase leading-5">
+                      Platform
+                    </div>
+                    <div className="flex flex-col justify-center items-start">
+                      <div className="text-center text-[#1E1E1E] text-base font-normal leading-[26px]">
+                        WhatsApp & Web
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="text-center">
-              <span className="uppercase tracking-wide">ROL</span>
-            </div>
-            <div className="text-center">
-              <span className="uppercase tracking-wide">2023-2024</span>
-            </div>
-            <div className="text-center">
-              <span>2024, Present</span>
-            </div>
-            <div className="text-center">
-              <span>Product Strategy</span>
-            </div>
-            <div className="text-center">
-              <span>WhatsApp & Web</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Main Visual Section */}
-      <section className="bg-blue-50 px-6 py-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Factura por WhatsApp.<br />
-                En segundos.
-              </h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                NUMA convierte las conversaciones de WhatsApp en SAT. Evita errores
-                y ahorra tiempo en segundos, sin depender de nadie.
-              </p>
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-                Ver el Futuro en Acción
-              </button>
+            {/* Hero Image */}
+            <div className="w-full shadow-[10px_10px_10px_rgba(0,0,0,0.10)] overflow-hidden rounded-3xl flex flex-col justify-start items-start">
+              <img 
+                className="w-full h-auto max-h-[758px] object-contain" 
+                src="/lovable-uploads/77f7effb-2c25-4511-8019-38f7831625d2.png" 
+                alt="NUMA WhatsApp Interface"
+              />
             </div>
-            <div className="flex justify-center">
-              <div className="relative">
-                <img 
-                  src="/lovable-uploads/77f7effb-2c25-4511-8019-38f7831625d2.png" 
-                  alt="WhatsApp interface showing NUMA assistant" 
-                  className="max-w-full h-auto"
-                />
+
+            {/* Context and Insights Section */}
+            <div className="w-full flex flex-col justify-start items-center gap-12">
+              <div className="max-w-[573px] w-full flex flex-col justify-center items-start gap-6">
+                <div className="text-[#111111] text-2xl font-bold leading-8">
+                  Context
+                </div>
+                <div className="w-full text-[#666666] text-base font-normal leading-[26px] tracking-[0.32px]">
+                  Creating government compliant digital invoices in Mexico (CFDI) has been slow, error prone and traditionally handled by accountants. The SAT, Mexico's tax authority, offers a self‑invoicing system that is basic and lacks proper validation, so users cannot be sure their invoices are correct. This makes invoicing a manual, repetitive task often delegated to accountants. Most existing tools are desktop only and complex, causing small service providers and accountants to lose time and money.
+                </div>
+              </div>
+              <div className="max-w-[573px] w-full flex flex-col justify-center items-start gap-6">
+                <div className="text-[#111111] text-2xl font-bold leading-8">
+                  Insights
+                </div>
+                <div className="w-full text-[#666666] text-base font-normal leading-[26px]">
+                  Market research showed that the most effective value proposition must combine four elements: 95 percent automation, regulatory urgency, empathetic language, and credibility in the Mexican market. Accountants aged 30 to 45 want to move from repetitive data entry to trusted strategy work, avoiding the fear of fines that can reach up to $173,000 MXN. NUMA addresses these pain points by automating almost all CFDI tasks and removing the frustration of manual validations that often consume 15 to 20 hours weekly.
+                </div>
+              </div>
+            </div>
+
+            {/* Approach Section */}
+            <div className="max-w-[574px] w-full flex flex-col justify-start items-start gap-8">
+              <div className="text-[#111111] text-2xl font-bold leading-8">
+                Approach
+              </div>
+              <div className="w-full pt-1 pl-0 flex flex-col justify-center items-center gap-2">
+                <div className="w-full p-8 bg-[#2D4BAE] rounded-lg flex flex-col justify-center items-start gap-4">
+                  <div className="w-full flex flex-col justify-start items-start gap-2">
+                    <div className="text-white text-sm font-light leading-7">
+                      WhatsApp
+                    </div>
+                    <div className="w-full text-white text-base font-normal leading-6">
+                      WhatsApp is used daily by over 94 million people in Mexico, giving the product instant familiarity and adoption.
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full p-8 bg-[#2D4BAE] rounded-lg flex flex-col justify-center items-start gap-4">
+                  <div className="w-full flex flex-col justify-start items-start gap-2">
+                    <div className="text-white text-sm font-light leading-7">
+                      Plain prompts
+                    </div>
+                    <div className="w-full text-white text-base font-normal leading-6">
+                      We turned complex SAT rules into simple prompts that cut confusion and errors. An AI assistant runs in the background coordinating agents for tasks like verification and invoice creation.
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full p-8 bg-[#2D4BAE] rounded-lg flex flex-col justify-center items-start gap-4">
+                  <div className="w-full flex flex-col justify-start items-start gap-2">
+                    <div className="text-white text-sm font-light leading-7">
+                      Wizard prototype
+                    </div>
+                    <div className="w-full text-white text-base font-normal leading-6">
+                      We tested the full flow with a manually supported prototype, validating ideas and learning fast without heavy development.
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full p-8 bg-[#2D4BAE] rounded-lg flex flex-col justify-center items-start gap-4">
+                  <div className="w-full flex flex-col justify-start items-start gap-2">
+                    <div className="text-white text-sm font-light leading-7">
+                      A/B tests
+                    </div>
+                    <div className="w-full text-white text-base font-normal leading-6">
+                      We launched two landing pages, one for accountants and one for small and medium enterprises. Tracking sign ups showed which group needed the service more, helping validate demand and reduce risk.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Customer Journey Section */}
+            <div className="max-w-[866px] w-full flex flex-col justify-center items-start gap-6">
+              <div className="flex justify-center items-center gap-2">
+                <div className="text-[#111111] text-2xl font-bold leading-8">
+                  Customer Journey
+                </div>
+              </div>
+              <div className="flex justify-center items-center gap-2">
+                <div className="text-[#111111] text-base font-light leading-8">
+                  Juan Hernández, Restaurant Owner
+                </div>
+              </div>
+              <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
+                {/* Journey Cards - Top Row */}
+                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
+                  <div className="w-15 h-15 flex justify-start items-center gap-2">
+                    <img className="w-15 h-15" src="/placeholder.svg" alt="Advocacy icon" />
+                  </div>
+                  <div className="w-full flex flex-col justify-start items-start gap-4">
+                    <div className="text-black text-sm font-light leading-7">
+                      Advocacy
+                    </div>
+                    <div className="w-full h-24 text-black text-base font-normal leading-6">
+                      Shares NUMA in WhatsApp groups, posts on social media, and refers friends.
+                    </div>
+                  </div>
+                </div>
+                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
+                  <div className="w-15 h-15 flex justify-start items-center gap-2">
+                    <img className="w-15 h-15" src="/placeholder.svg" alt="Adoption icon" />
+                  </div>
+                  <div className="w-full flex flex-col justify-start items-start gap-4">
+                    <div className="text-black text-sm font-light leading-7">
+                      Adoption
+                    </div>
+                    <div className="w-full h-24 text-black text-base font-normal leading-6">
+                      Clients issue invoices themselves, review weekly summaries, and reduce accountant costs.
+                    </div>
+                  </div>
+                </div>
+                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
+                  <div className="w-15 h-15 flex justify-start items-center gap-2">
+                    <img className="w-15 h-15" src="/placeholder.svg" alt="Onboarding icon" />
+                  </div>
+                  <div className="w-full flex flex-col justify-start items-start gap-4">
+                    <div className="text-black text-sm font-light leading-7">
+                      Onboarding
+                    </div>
+                    <div className="w-full h-24 text-black text-base font-normal leading-6">
+                      Uploads Digital Tax Certificate, issues first invoice, and shares with staff.
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Journey Cards - Bottom Row */}
+                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
+                  <div className="w-15 h-15 flex justify-start items-center gap-2">
+                    <img className="w-15 h-15" src="/placeholder.svg" alt="Decision icon" />
+                  </div>
+                  <div className="w-full flex flex-col justify-start items-start gap-4">
+                    <div className="text-black text-sm font-light leading-7">
+                      Decision
+                    </div>
+                    <div className="w-full h-24 text-black text-base font-normal leading-6">
+                      Attends a 15 minute demo, asks colleagues, compares against current accountant, and starts a 30 day trial.
+                    </div>
+                  </div>
+                </div>
+                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
+                  <div className="flex justify-start items-center gap-2">
+                    <img className="w-15 h-15" src="/placeholder.svg" alt="Consideration icon" />
+                  </div>
+                  <div className="w-full flex flex-col justify-start items-start gap-4">
+                    <div className="text-black text-sm font-light leading-7">
+                      Consideration
+                    </div>
+                    <div className="w-full h-24 text-black text-base font-normal leading-6">
+                      Visits website, watches a 30-second demo, calculates savings, and books a demo.
+                    </div>
+                  </div>
+                </div>
+                <div className="p-8 rounded-lg border border-black flex flex-col justify-center items-start gap-4">
+                  <div className="w-15 h-15 flex justify-start items-center gap-2">
+                    <img className="w-15 h-15" src="/placeholder.svg" alt="Awareness icon" />
+                  </div>
+                  <div className="w-full flex flex-col justify-start items-start gap-4">
+                    <div className="text-black text-sm font-light leading-7">
+                      Awareness
+                    </div>
+                    <div className="w-full text-black text-base font-normal leading-6">
+                      Discovers NUMA through Google searches, Facebook ads, and news about SAT changes.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Context Section */}
-      <section className="px-6 py-16">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold text-foreground mb-8">Context</h3>
-          <p className="text-muted-foreground leading-relaxed">
-            Creating government-compliant digital invoices in Mexico (CFDI) was 
-            slow, error-prone and frustrating for small service providers. The 
-            SAT (Mexico's tax authority) offers a real new invoicing format that is basic 
-            and lacks proper validation, so users often lost time making 
-            corrections. The current invoicing is a manual, repetitive task often 
-            delegated to accountants. Most existing tools were desktop-only and 
-            overwhelming. Through research, we discovered users needed a simplified 
-            service focused around a task they need to accomplish or else 
-            they're taxed.
-          </p>
-        </div>
-      </section>
-
-      {/* Insights Section */}
-      <section className="px-6 py-16 bg-muted/30">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold text-foreground mb-8">Insights</h3>
-          <p className="text-muted-foreground leading-relaxed mb-8">
-            Market research revealed that the most attractive value proposition would 
-            combine four elements: 95 percent of invoicing regulatory urgency, 
-            empathetic language, and credibility in the Mexican market. 
-            Accountants charge $2 to $6 per invoice but making a mistake simply 
-            doubles the initial strategy work, according the fact of fines that reach up to 
-            $12,000 MXN. NUMA addresses these concerns by providing almost 
-            zero error rate, a simplicity similar to WhatsApp conversations, and convenience 
-            often consumer 15 to 20 hours weekly.
-          </p>
-        </div>
-      </section>
-
-      {/* Approach Section */}
-      <section className="px-6 py-16">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold text-foreground mb-8">Approach</h3>
-          
-          <div className="grid gap-4 mb-8">
-            <Card className="bg-blue-600 text-white border-0">
-              <CardContent className="p-6">
-                <h4 className="font-bold mb-2">WhatsApp</h4>
-                <p className="text-sm">
-                  WhatsApp is used daily by over 95 million people in Mexico, giving 
-                  this product instant familiarity and adoption.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-blue-600 text-white border-0">
-              <CardContent className="p-6">
-                <h4 className="font-bold mb-2">Plain language</h4>
-                <p className="text-sm">
-                  We turned complex SAT fields into simple prompts that any 
-                  professional can answer. An AI model helps in the background 
-                  understanding agents for focus the verification and reduce 
-                  errors.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-blue-600 text-white border-0">
-              <CardContent className="p-6">
-                <h4 className="font-bold mb-2">Wizard prototype</h4>
-                <p className="text-sm">
-                  We tested the full workflows in a manual, wizard prototype, 
-                  validating desirability and learning best without heavy development.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-blue-600 text-white border-0">
-              <CardContent className="p-6">
-                <h4 className="font-bold mb-2">A/B tests</h4>
-                <p className="text-sm">
-                  We launched two landing pages, one for accountants and one 
-                  for SMEs to understand value prop messaging, then saw improved 
-                  sign up flow and tracked sign up conversions and reduced risk.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Customer Journey Section */}
-      <section className="px-6 py-16 bg-muted/30">
-        <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl font-bold text-foreground mb-8">Customer Journey</h3>
-          <p className="text-muted-foreground mb-12">Juan - Gym coach, name_rct 12345</p>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="bg-background border-pink-200 border-2">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">💳</span>
-                </div>
-                <h4 className="font-bold text-foreground mb-2">Awareness</h4>
-                <p className="text-sm text-muted-foreground">
-                  Discovers NUMA through Google searches, 
-                  word of mouth, and gym 
-                  about SAT changes.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-background border-blue-200 border-2">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">💬</span>
-                </div>
-                <h4 className="font-bold text-foreground mb-2">Consideration</h4>
-                <p className="text-sm text-muted-foreground">
-                  Visits website, watches a 
-                  30-second demo, 
-                  calculates savings, and 
-                  books intro call.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-background border-green-200 border-2">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">🏃</span>
-                </div>
-                <h4 className="font-bold text-foreground mb-2">First Use</h4>
-                <p className="text-sm text-muted-foreground">
-                  Attends a 5-minute demo, 
-                  asks follow-up 
-                  questions against current 
-                  workflow, tests on-demand 
-                  30-day free.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-background border-orange-200 border-2">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">📄</span>
-                </div>
-                <h4 className="font-bold text-foreground mb-2">Onboarding</h4>
-                <p className="text-sm text-muted-foreground">
-                  Uses him to receive first 
-                  certificate, issues first 
-                  invoice, and shares with 
-                  staff.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-background border-purple-200 border-2">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">👨</span>
-                </div>
-                <h4 className="font-bold text-foreground mb-2">Adoption</h4>
-                <p className="text-sm text-muted-foreground">
-                  Uses him to invoice 
-                  business payments weekly 
-                  for rentals, and typical 
-                  document costs.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-background border-teal-200 border-2">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">⭐</span>
-                </div>
-                <h4 className="font-bold text-foreground mb-2">Advocacy</h4>
-                <p className="text-sm text-muted-foreground">
-                  Refers NUMA to other gym 
-                  groups posts on social 
-                  media, and talks to friends 
-                  about the service.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
   );
 };
