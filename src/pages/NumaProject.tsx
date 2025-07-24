@@ -2,170 +2,41 @@ import React from 'react';
 
 const NumaProject: React.FC = () => {
   return (
-    <div style={{
-      width: '100%', 
-      height: '100%', 
-      paddingLeft: 298, 
-      paddingRight: 298, 
-      flexDirection: 'column', 
-      justifyContent: 'center', 
-      alignItems: 'center', 
-      gap: 10, 
-      display: 'inline-flex'
-    }}>
-      <div style={{
-        maxWidth: 1000, 
-        flexDirection: 'column', 
-        justifyContent: 'center', 
-        alignItems: 'flex-start', 
-        gap: 32, 
-        display: 'flex'
-      }}>
-        <div style={{
-          width: 571, 
-          height: 28, 
-          color: 'black', 
-          fontSize: 18, 
-          fontFamily: 'Epilogue', 
-          fontWeight: '500', 
-          lineHeight: 28, 
-          wordWrap: 'break-word'
-        }}>
+    <div className="px-72 inline-flex flex-col justify-center items-center gap-2.5">
+      <div className="max-w-[1000px] flex flex-col justify-center items-start gap-8">
+        <div className="w-[571px] h-7 justify-start text-black text-lg font-medium font-['Epilogue'] leading-7">
           Numa
         </div>
-        <div style={{
-          width: 571, 
-          color: 'black', 
-          fontSize: 48, 
-          fontFamily: 'Epilogue', 
-          fontWeight: '700', 
-          lineHeight: 60, 
-          wordWrap: 'break-word'
-        }}>
+        <div className="w-[571px] justify-start text-black text-5xl font-bold font-['Epilogue'] leading-[60px]">
           AI assistant that helps professionals create compliant invoices in seconds   
         </div>
-        <div style={{
-          justifyContent: 'flex-start', 
-          alignItems: 'center', 
-          gap: 40, 
-          display: 'inline-flex'
-        }}>
-          <div style={{
-            paddingTop: 8, 
-            paddingBottom: 8, 
-            flexDirection: 'column', 
-            justifyContent: 'flex-start', 
-            alignItems: 'flex-start', 
-            gap: 16, 
-            display: 'inline-flex'
-          }}>
-            <div style={{
-              textAlign: 'center', 
-              color: 'black', 
-              fontSize: 14, 
-              fontFamily: 'Epilogue', 
-              fontWeight: '300', 
-              textTransform: 'uppercase', 
-              lineHeight: 20, 
-              wordWrap: 'break-word'
-            }}>
+        <div className="inline-flex justify-start items-center gap-10">
+          <div className="py-2 inline-flex flex-col justify-start items-start gap-4">
+            <div className="text-center justify-start text-black text-sm font-light font-['Epilogue'] uppercase leading-tight">
               Timeline
             </div>
-            <div style={{
-              flexDirection: 'column', 
-              justifyContent: 'center', 
-              alignItems: 'flex-start', 
-              display: 'flex'
-            }}>
-              <div style={{
-                textAlign: 'center', 
-                color: '#1E1E1E', 
-                fontSize: 16, 
-                fontFamily: 'Epilogue', 
-                fontWeight: '400', 
-                lineHeight: 26, 
-                wordWrap: 'break-word'
-              }}>
+            <div className="flex flex-col justify-center items-start">
+              <div className="text-center justify-start text-stone-900 text-base font-normal font-['Epilogue'] leading-relaxed">
                 2024-Present
               </div>
             </div>
           </div>
-          <div style={{
-            paddingTop: 8, 
-            paddingBottom: 8, 
-            flexDirection: 'column', 
-            justifyContent: 'flex-start', 
-            alignItems: 'flex-start', 
-            gap: 16, 
-            display: 'inline-flex'
-          }}>
-            <div style={{
-              textAlign: 'center', 
-              color: 'black', 
-              fontSize: 14, 
-              fontFamily: 'Epilogue', 
-              fontWeight: '300', 
-              textTransform: 'uppercase', 
-              lineHeight: 20, 
-              wordWrap: 'break-word'
-            }}>
+          <div className="py-2 inline-flex flex-col justify-start items-start gap-4">
+            <div className="text-center justify-start text-black text-sm font-light font-['Epilogue'] uppercase leading-tight">
               Role
             </div>
-            <div style={{
-              flexDirection: 'column', 
-              justifyContent: 'center', 
-              alignItems: 'flex-start', 
-              display: 'flex'
-            }}>
-              <div style={{
-                textAlign: 'center', 
-                color: '#1E1E1E', 
-                fontSize: 16, 
-                fontFamily: 'Epilogue', 
-                fontWeight: '400', 
-                lineHeight: 26, 
-                wordWrap: 'break-word'
-              }}>
+            <div className="flex flex-col justify-center items-start">
+              <div className="text-center justify-start text-stone-900 text-base font-normal font-['Epilogue'] leading-relaxed">
                 Product Strategy
               </div>
             </div>
           </div>
-          <div style={{
-            paddingTop: 8, 
-            paddingBottom: 8, 
-            flexDirection: 'column', 
-            justifyContent: 'flex-start', 
-            alignItems: 'flex-start', 
-            gap: 16, 
-            display: 'inline-flex'
-          }}>
-            <div style={{
-              textAlign: 'center', 
-              color: 'black', 
-              fontSize: 14, 
-              fontFamily: 'Epilogue', 
-              fontWeight: '300', 
-              textTransform: 'uppercase', 
-              lineHeight: 20, 
-              wordWrap: 'break-word'
-            }}>
+          <div className="py-2 inline-flex flex-col justify-start items-start gap-4">
+            <div className="text-center justify-start text-black text-sm font-light font-['Epilogue'] uppercase leading-tight">
               Platform
             </div>
-            <div style={{
-              flexDirection: 'column', 
-              justifyContent: 'center', 
-              alignItems: 'flex-start', 
-              display: 'flex'
-            }}>
-              <div style={{
-                textAlign: 'center', 
-                color: '#1E1E1E', 
-                fontSize: 16, 
-                fontFamily: 'Epilogue', 
-                fontWeight: '400', 
-                lineHeight: 26, 
-                wordWrap: 'break-word'
-              }}>
+            <div className="flex flex-col justify-center items-start">
+              <div className="text-center justify-start text-stone-900 text-base font-normal font-['Epilogue'] leading-relaxed">
                 WhatsApp & Web
               </div>
             </div>
