@@ -2,41 +2,39 @@ import React from 'react';
 
 const Numa2: React.FC = () => {
   return (
-    <div className="w-full h-full px-10 py-15 bg-white overflow-hidden outline outline-1 outline-black -outline-offset-1 flex flex-col justify-start items-center gap-20">
-      <div className="self-stretch bg-white overflow-hidden justify-start items-center inline-flex">
+    <div className="w-[1440px] px-10 py-14 bg-white outline outline-1 outline-offset-[-1px] outline-black inline-flex flex-col justify-start items-center gap-20 overflow-hidden">
+      <div className="self-stretch bg-white inline-flex justify-start items-center overflow-hidden">
         <img className="w-20 h-20" src="https://placehold.co/80x80" alt="Logo" />
-        <div className="flex-1 flex-col justify-start items-end gap-2.5 inline-flex">
-          <div className="self-stretch pt-5 pb-5 px-10 justify-end items-center gap-10 inline-flex">
-            <div className="pt-0 justify-start items-center gap-10 flex">
-              <div className="text-black text-base font-normal font-epilogue leading-[26px]">Projects</div>
+        <div className="flex-1 inline-flex flex-col justify-start items-end gap-2.5">
+          <div className="self-stretch px-10 py-5 inline-flex justify-end items-center gap-10">
+            <div className="pt-[0.01px] flex justify-start items-center gap-10">
+              <div className="justify-start text-black text-base font-normal font-['Epilogue'] leading-relaxed">Projects</div>
             </div>
-            <div className="p-4 bg-white rounded-[30px] outline outline-1 outline-black -outline-offset-1 justify-start items-center gap-2.5 flex">
-              <div className="text-black text-base font-normal font-epilogue leading-[26px] tracking-[0.32px]">Let's connect</div>
+            <div className="p-4 bg-white rounded-[30px] outline outline-1 outline-offset-[-1px] outline-black flex justify-start items-center gap-2.5">
+              <div className="justify-start text-black text-base font-normal font-['Epilogue'] leading-relaxed tracking-tight">Let's connect</div>
             </div>
           </div>
         </div>
       </div>
-      
-      <div className="w-full max-w-[668px] flex-col justify-start items-start gap-8 flex">
-        <div className="self-stretch text-black text-lg font-medium font-epilogue leading-7">Numa</div>
-        <div className="self-stretch text-black text-5xl font-bold font-epilogue leading-tight">AI assistant that helps professionals create compliant invoices in seconds</div>
-        <div className="self-stretch justify-start items-center gap-10 inline-flex flex-wrap content-center">
-          <div className="w-[105px] py-2 flex-col justify-start items-start gap-4 inline-flex">
-            <div className="self-stretch text-black text-sm font-light font-epilogue uppercase leading-5">Timeline</div>
-            <div className="self-stretch text-center text-[#1E1E1E] text-base font-normal font-epilogue leading-[26px]">2024-Present</div>
+      <div className="w-full max-w-[668px] flex flex-col justify-start items-start gap-8">
+        <div className="self-stretch justify-start text-black text-lg font-medium font-['Epilogue'] leading-7">Numa</div>
+        <div className="self-stretch justify-start text-black text-5xl font-bold font-['Epilogue']">AI assistant that helps professionals create compliant invoices in seconds   </div>
+        <div className="self-stretch inline-flex justify-start items-center gap-10 flex-wrap content-center">
+          <div className="w-28 py-2 inline-flex flex-col justify-start items-start gap-4">
+            <div className="self-stretch justify-start text-black text-sm font-light font-['Epilogue'] uppercase leading-tight">Timeline</div>
+            <div className="self-stretch text-center justify-start text-stone-900 text-base font-normal font-['Epilogue'] leading-relaxed">2024-Present</div>
           </div>
-          <div className="w-[134px] py-2 flex-col justify-start items-start gap-4 inline-flex">
-            <div className="self-stretch text-black text-sm font-light font-epilogue uppercase leading-5">Role</div>
-            <div className="self-stretch text-center text-[#1E1E1E] text-base font-normal font-epilogue leading-[26px]">Product Strategy</div>
+          <div className="w-32 py-2 inline-flex flex-col justify-start items-start gap-4">
+            <div className="self-stretch justify-start text-black text-sm font-light font-['Epilogue'] uppercase leading-tight">Role</div>
+            <div className="self-stretch text-center justify-start text-stone-900 text-base font-normal font-['Epilogue'] leading-relaxed">Product Strategy</div>
           </div>
-          <div className="w-[132px] py-2 flex-col justify-start items-start gap-4 inline-flex">
-            <div className="self-stretch text-black text-sm font-light font-epilogue uppercase leading-5">Platform</div>
-            <div className="self-stretch text-center text-[#1E1E1E] text-base font-normal font-epilogue leading-[26px]">WhatsApp & Web</div>
+          <div className="w-32 py-2 inline-flex flex-col justify-start items-start gap-4">
+            <div className="self-stretch justify-start text-black text-sm font-light font-['Epilogue'] uppercase leading-tight">Platform</div>
+            <div className="self-stretch text-center justify-start text-stone-900 text-base font-normal font-['Epilogue'] leading-relaxed">WhatsApp & Web</div>
           </div>
         </div>
       </div>
-      
-      <img className="w-full h-[883px] max-w-[1360px] max-h-[883px] rounded-[20px]" src="https://placehold.co/1360x883" alt="Numa product screenshot" />
+      <img className="w-full h-[883px] max-w-[1360px] max-h-[883.28px] rounded-[20px]" src="https://placehold.co/1360x883" alt="Numa product screenshot" />
     </div>
   );
 };
