@@ -14,6 +14,7 @@ import NumaProject from "./pages/NumaProject";
 import Numa2 from "./pages/Numa2";
 import Numa3 from "./pages/Numa3";
 import Numa4 from "./pages/Numa4";
+import Numa5 from "./pages/Numa5";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/numa2" element={<Numa2 />} />
           <Route path="/numa3" element={<Numa3 />} />
           <Route path="/numa4" element={<Numa4 />} />
+          <Route path="/numa5" element={<Numa5 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
