@@ -11,6 +11,7 @@ const GitHubRedirect = () => {
 import Index from "./pages/Index";
 import ProjectExample from "./pages/ProjectExample";
 import NumaProject from "./pages/NumaProject";
+import Numa2 from "./pages/Numa2";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/project-example" element={<ProjectExample />} />
           <Route path="/numa" element={<NumaProject />} />
+          <Route path="/numa2" element={<Numa2 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
