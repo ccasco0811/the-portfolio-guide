@@ -1,6 +1,5 @@
 import React from 'react';
 import heroImage from '@/assets/hero-editorial.jpg';
-import numaCaseImage from '@/assets/numa-case.jpg';
 import lexaCaseImage from '@/assets/lexa-case.jpg';
 
 const Portfolio = () => {
@@ -57,51 +56,9 @@ const Portfolio = () => {
           </div>
           
           <div className="flex justify-center">
-            {[
-              {
-                id: 1,
-                title: 'NUMA AI Assistant',
-                slug: 'numa',
-                description: 'AI-powered invoicing assistant for CFDI compliance. Built conversational flow for WhatsApp-based invoice creation in under 30 seconds.',
-                image: '/lovable-uploads/1e2a7109-7c0b-4bec-a8db-ead64c5d4180.png',
-                category: 'AI & Automation'
-              }
-            ].map((project) => (
-              <article
-                key={project.id}
-                className="group relative overflow-hidden rounded-2xl bg-white hover:scale-[1.02] transition-all duration-300 hover:shadow-2xl"
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6 sm:p-8">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-semibold text-primary uppercase tracking-wider">
-                      {project.category}
-                    </span>
-                  </div>
-                  <h3 className="editorial-subheading text-foreground mb-3">
-                    {project.title}
-                  </h3>
-                  <p className="editorial-small text-muted-foreground mb-6 max-w-prose break-words whitespace-normal">
-                    {project.description}
-                  </p>
-                  <a 
-                    href={`/${project.slug}`}
-                    className="inline-flex items-center text-sm font-semibold text-primary hover:text-primary/80 transition-colors duration-200"
-                  >
-                    View Case Study
-                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </a>
-                </div>
-              </article>
-            ))}
+            <div className="text-center text-white/60 py-20">
+              <p className="text-lg">Portfolio projects coming soon...</p>
+            </div>
           </div>
         </div>
       </section>
