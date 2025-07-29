@@ -86,7 +86,7 @@ const Portfolio = () => {
             From early concepts to testable products, here's how I create value through design.
           </p>
         </div>
-        <div className="self-stretch flex justify-center items-center gap-4 md:gap-8 flex-wrap">
+        <div className="self-stretch flex flex-col justify-center items-center gap-4 md:gap-8">
           <div className="flex-1 p-5 rounded-[20px] border-2 border-black flex flex-col justify-center items-center gap-2.5 hover:shadow-lg transition-all duration-300">
             <div className="self-stretch bg-white flex flex-col justify-center items-start gap-5 overflow-hidden">
               <h3 className="text-black text-base font-normal font-['Epilogue'] leading-normal">
