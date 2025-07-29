@@ -4,7 +4,7 @@ const Portfolio = () => {
   return (
     <div className="w-full max-w-[1440px] mx-auto bg-white flex flex-col justify-start items-center gap-10 overflow-hidden">
       {/* Header */}
-      <header className="self-stretch h-40 p-10 flex justify-between items-center overflow-hidden">
+      <header className="self-stretch h-32 md:h-40 p-4 md:p-10 flex justify-between items-center overflow-hidden">
         <img 
           className="w-20 h-20" 
           src="/lovable-uploads/f6615c53-e1f9-45e6-928c-136887dfd867.png" 
@@ -16,9 +16,9 @@ const Portfolio = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="self-stretch py-48 flex flex-col justify-center items-center gap-2.5">
-        <div className="w-full max-w-[1034px] flex flex-col justify-center items-center gap-10">
-          <h1 className="w-full max-w-[1344px] text-black text-6xl font-normal font-['Epilogue'] leading-[64.05px]">
+      <section className="self-stretch py-16 md:py-32 lg:py-48 px-4 md:px-8 flex flex-col justify-center items-center gap-2.5">
+        <div className="w-full max-w-[1034px] flex flex-col justify-center items-center gap-6 md:gap-10">
+          <h1 className="w-full text-black text-3xl md:text-5xl lg:text-6xl font-normal font-['Epilogue'] leading-tight md:leading-[64.05px] text-center">
             AI assistant that helps professionals create compliant invoices in seconds
           </h1>
           <p className="self-stretch text-black text-base font-normal font-['Epilogue'] leading-normal">
@@ -33,42 +33,42 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="self-stretch py-20 flex flex-col justify-start items-center gap-20">
-        <div className="self-stretch flex flex-col justify-center items-center gap-4">
-          <h2 className="text-center text-black text-4xl font-bold font-['Epilogue'] leading-10">
+      <section className="self-stretch py-12 md:py-20 px-4 md:px-8 flex flex-col justify-start items-center gap-12 md:gap-20">
+        <div className="self-stretch flex flex-col justify-center items-center gap-4 text-center">
+          <h2 className="text-black text-2xl md:text-4xl font-bold font-['Epilogue'] leading-tight md:leading-10">
             What We Made Happen
           </h2>
-          <p className="text-black text-2xl font-normal font-['Epilogue'] leading-7">
+          <p className="text-black text-lg md:text-2xl font-normal font-['Epilogue'] leading-normal md:leading-7 max-w-4xl">
             Projects I've co-designed with teams and founders to turn ideas into meaningful, testable solutions.
           </p>
         </div>
-        <div className="w-full max-w-[1248px] flex justify-start items-center gap-8 flex-wrap">
-          <div className="flex-1 h-[608px] max-w-[608px] bg-black/60 rounded-[30px] flex flex-col justify-center items-center gap-2.5 hover:bg-black/70 transition-all duration-300 cursor-pointer">
-            <div className="w-[568px] h-28 flex flex-col justify-start items-start gap-6">
-              <h3 className="self-stretch text-white text-5xl font-normal font-['Epilogue']">
+        <div className="w-full max-w-[1248px] flex justify-center items-center gap-4 md:gap-8 flex-wrap">
+          <div className="w-full md:flex-1 h-[400px] md:h-[608px] md:max-w-[608px] bg-black/60 rounded-[20px] md:rounded-[30px] flex flex-col justify-center items-center gap-2.5 hover:bg-black/70 transition-all duration-300 cursor-pointer p-6 md:p-0">
+            <div className="w-full md:w-[568px] flex flex-col justify-start items-start gap-4 md:gap-6">
+              <h3 className="self-stretch text-white text-3xl md:text-5xl font-normal font-['Epilogue']">
                 Numa
               </h3>
-              <p className="self-stretch text-white text-2xl font-normal font-['Epilogue'] leading-9">
+              <p className="self-stretch text-white text-lg md:text-2xl font-normal font-['Epilogue'] leading-normal md:leading-9">
                 AI assistant that helps professionals create compliant invoices in seconds
               </p>
             </div>
           </div>
-          <div className="w-[608px] h-[608px] max-w-[608px] bg-black/60 rounded-[30px] flex flex-col justify-center items-center gap-2.5 hover:bg-black/70 transition-all duration-300">
-            <div className="w-[568px] h-28 flex flex-col justify-start items-start gap-6">
-              <h3 className="self-stretch text-white text-5xl font-normal font-['Epilogue']">
+          <div className="w-full md:w-[608px] h-[400px] md:h-[608px] md:max-w-[608px] bg-black/60 rounded-[20px] md:rounded-[30px] flex flex-col justify-center items-center gap-2.5 hover:bg-black/70 transition-all duration-300 p-6 md:p-0">
+            <div className="w-full md:w-[568px] flex flex-col justify-start items-start gap-4 md:gap-6">
+              <h3 className="self-stretch text-white text-3xl md:text-5xl font-normal font-['Epilogue']">
                 Patrimonio Hoy
               </h3>
-              <p className="self-stretch flex-1 text-white text-2xl font-bold font-['Epilogue'] leading-9">
+              <p className="self-stretch flex-1 text-white text-lg md:text-2xl font-bold font-['Epilogue'] leading-normal md:leading-9">
                 Coming Soon
               </p>
             </div>
           </div>
-          <div className="w-[608px] h-[608px] max-w-[608px] bg-black/60 rounded-[30px] flex flex-col justify-center items-center gap-2.5 hover:bg-black/70 transition-all duration-300">
-            <div className="w-[568px] h-28 flex flex-col justify-start items-start gap-6">
-              <h3 className="self-stretch text-white text-5xl font-normal font-['Epilogue']">
+          <div className="w-full md:w-[608px] h-[400px] md:h-[608px] md:max-w-[608px] bg-black/60 rounded-[20px] md:rounded-[30px] flex flex-col justify-center items-center gap-2.5 hover:bg-black/70 transition-all duration-300 p-6 md:p-0">
+            <div className="w-full md:w-[568px] flex flex-col justify-start items-start gap-4 md:gap-6">
+              <h3 className="self-stretch text-white text-3xl md:text-5xl font-normal font-['Epilogue']">
                 CiBiDi
               </h3>
-              <p className="self-stretch flex-1 text-white text-2xl font-bold font-['Epilogue'] leading-9">
+              <p className="self-stretch flex-1 text-white text-lg md:text-2xl font-bold font-['Epilogue'] leading-normal md:leading-9">
                 Coming Soon
               </p>
             </div>
@@ -77,16 +77,16 @@ const Portfolio = () => {
       </section>
 
       {/* Process Section */}
-      <section className="w-full max-w-[1248px] py-40 flex flex-col justify-start items-center gap-20">
-        <div className="self-stretch flex flex-col justify-center items-center gap-4">
-          <h2 className="text-center text-black text-4xl font-bold font-['Epilogue'] leading-10">
+      <section className="w-full max-w-[1248px] py-12 md:py-20 lg:py-40 px-4 md:px-8 flex flex-col justify-start items-center gap-12 md:gap-20">
+        <div className="self-stretch flex flex-col justify-center items-center gap-4 text-center">
+          <h2 className="text-black text-2xl md:text-4xl font-bold font-['Epilogue'] leading-tight md:leading-10">
             How I Bring Ideas to Life
           </h2>
-          <p className="text-black text-2xl font-normal font-['Epilogue'] leading-9">
+          <p className="text-black text-lg md:text-2xl font-normal font-['Epilogue'] leading-normal md:leading-9 max-w-4xl">
             From early concepts to testable products, here's how I create value through design.
           </p>
         </div>
-        <div className="self-stretch flex justify-center items-center gap-8 flex-wrap">
+        <div className="self-stretch flex justify-center items-center gap-4 md:gap-8 flex-wrap">
           <div className="flex-1 p-5 rounded-[20px] border-2 border-black flex flex-col justify-center items-center gap-2.5 hover:shadow-lg transition-all duration-300">
             <div className="self-stretch bg-white flex flex-col justify-center items-start gap-5 overflow-hidden">
               <h3 className="text-black text-base font-normal font-['Epilogue'] leading-normal">
@@ -143,16 +143,16 @@ const Portfolio = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="w-[1248px] px-14 py-20 flex flex-col justify-start items-center gap-20">
-        <div className="self-stretch flex flex-col justify-center items-center gap-4">
-          <h2 className="text-center text-black text-4xl font-bold font-['Epilogue'] leading-10">
+      <section className="w-full max-w-[1248px] px-4 md:px-8 lg:px-14 py-12 md:py-20 flex flex-col justify-start items-center gap-12 md:gap-20">
+        <div className="self-stretch flex flex-col justify-center items-center gap-4 text-center">
+          <h2 className="text-black text-2xl md:text-4xl font-bold font-['Epilogue'] leading-tight md:leading-10">
             Stories from the Field
           </h2>
-          <p className="self-stretch text-center text-black text-2xl font-normal font-['Epilogue'] leading-9">
+          <p className="text-black text-lg md:text-2xl font-normal font-['Epilogue'] leading-normal md:leading-9 max-w-4xl">
             Real words from teammates, founders, and collaborators I've partnered with to design, test, and build meaningful solutions.
           </p>
         </div>
-        <div className="w-[1248px] max-w-[1320px] flex justify-center items-start gap-8 flex-wrap">
+        <div className="w-full flex justify-center items-start gap-4 md:gap-8 flex-wrap">
           <div className="flex-1 rounded-[40px] flex flex-col justify-start items-center gap-2.5">
             <div className="self-stretch bg-white flex flex-col justify-center items-start gap-10 overflow-hidden">
               <blockquote className="w-[528px] text-black text-base font-normal font-['Epilogue'] leading-normal">
@@ -183,10 +183,10 @@ const Portfolio = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="self-stretch bg-white flex flex-col justify-start items-start overflow-hidden">
-        <div className="w-[1440px] py-20 flex flex-col justify-center items-center gap-14">
+      <section className="self-stretch bg-white flex flex-col justify-start items-start overflow-hidden px-4 md:px-8">
+        <div className="w-full max-w-[1440px] mx-auto py-12 md:py-20 flex flex-col justify-center items-center gap-8 md:gap-14">
           <div className="w-full max-w-[858px] flex flex-col justify-center items-center gap-2.5">
-            <h2 className="self-stretch text-center text-neutral-900 text-7xl font-normal font-['Epilogue']">
+            <h2 className="self-stretch text-center text-neutral-900 text-3xl md:text-5xl lg:text-7xl font-normal font-['Epilogue'] leading-tight">
               Interested in how I design products?
             </h2>
           </div>
@@ -199,7 +199,7 @@ const Portfolio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="self-stretch px-10 pt-14 pb-16 flex flex-col justify-center items-center gap-10">
+      <footer className="self-stretch px-4 md:px-10 pt-8 md:pt-14 pb-8 md:pb-16 flex flex-col justify-center items-center gap-6 md:gap-10">
         <div className="self-stretch pt-[0.16px] flex justify-center items-center gap-7">
           <div className="flex justify-start items-start gap-10">
             <a href="mailto:carlos@cabras.co" className="text-black text-base font-normal font-['Epilogue'] leading-relaxed hover:underline">
